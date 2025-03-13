@@ -37,6 +37,10 @@ public class User {
             regexp = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$",
             message = "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character")
     private String password;
+    private enum Role {
+        USER,
+        ADMIN
+    }
 
     //@OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     //private UserPreferences preferences;
