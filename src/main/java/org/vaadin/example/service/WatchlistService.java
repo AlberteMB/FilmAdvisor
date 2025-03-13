@@ -1,0 +1,15 @@
+package org.vaadin.example.service;
+
+import org.vaadin.example.model.Watchlist;
+
+import java.util.List;
+
+public interface WatchlistService {
+
+    List<Watchlist> getAllWatchlists(String id);
+    Watchlist createWatchlist(Watchlist watchlist);
+    Watchlist getWatchlistById(String id);
+    Watchlist updateWatchlist(String id, Watchlist watchlistDetails);
+    boolean deleteWatchlist(String id);
+    long countWatchlist(String id);
+}

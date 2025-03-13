@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.List;
-import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -42,7 +41,7 @@ public class Movie {
     private List<WatchedMovie> watchedMovies;
 
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<WatchlistMovie> watchlistMovies;
+    private List<Watchlist> watchlistMovies;
 
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<DiscardedMovie> discardedMovies;

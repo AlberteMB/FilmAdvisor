@@ -1,9 +1,7 @@
 package org.vaadin.example.model;
 
-import com.github.javaparser.quality.NotNull;
 import jakarta.persistence.*;
 import java.util.List;
-import java.util.UUID;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
@@ -49,7 +47,7 @@ public class User {
     private List<WatchedMovie> watchedMovies;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<WatchlistMovie> watchlistMovies;
+    private List<Watchlist> watchlistMovies;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<DiscardedMovie> discardedMovies;
