@@ -1,32 +1,13 @@
-import { Button, Notification, TextField } from '@vaadin/react-components';
-import { HelloEndpoint } from 'Frontend/generated/endpoints.js';
-import { useSignal } from '@vaadin/hilla-react-signals';
-import type { ViewConfig } from '@vaadin/hilla-file-router/types.js';
+import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
 
-export const config: ViewConfig = {
-  menu: {
-    title: 'Main page',
-  },
-};
+export const config: ViewConfig = { menu: { order: 0, icon: 'line-awesome/svg/file.svg' }, title: 'Main' };
 
 export default function MainView() {
-  const name = useSignal('');
-
   return (
-    <>
-      <TextField
-        label="Your name"
-        onValueChanged={(e) => {
-          name.value = e.detail.value;
-        }}
-      />
-      <Button
-        onClick={async () => {
-          const serverResponse = await HelloEndpoint.sayHello(name.value);
-          Notification.show(serverResponse);
-        }}>
-        Say hello
-      </Button>
-    </>
+    <div className="flex flex-col h-full items-center justify-center p-l text-center box-border">
+      <img style={{ width: '200px' }} src="images/empty-plant.png" />
+      <h2>This place intentionally left empty</h2>
+      <p>It’s a place where you can grow your own UI 🤗</p>
+    </div>
   );
 }

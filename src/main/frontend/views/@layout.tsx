@@ -1,34 +1,37 @@
-import { AppLayout, DrawerToggle, ProgressBar, SideNav, SideNavItem } from '@vaadin/react-components';
 import { createMenuItems, useViewConfig } from '@vaadin/hilla-file-router/runtime.js';
+import { effect, signal } from '@vaadin/hilla-react-signals';
+import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem } from '@vaadin/react-components';
 import { Suspense, useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
-import { Signal, signal, effect } from '@vaadin/hilla-react-signals';
 
-const vaadin = window.Vaadin as {
-  documentTitleSignal: Signal<string>;
-};
-vaadin.documentTitleSignal = signal('');
+const documentTitleSignal = signal('');
 effect(() => {
-  document.title = vaadin.documentTitleSignal.value;
+  document.title = documentTitleSignal.value;
 });
 
+// Publish for Vaadin to use
+(window as any).Vaadin.documentTitleSignal = documentTitleSignal;
+
 export default function MainLayout() {
-  const currentTitle = useViewConfig()?.title ?? '';
+  const currentTitle = useViewConfig()?.title;
   const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
-    vaadin.documentTitleSignal.value = currentTitle;
-  });
+    if (currentTitle) {
+      documentTitleSignal.value = currentTitle;
+    }
+  }, [currentTitle]);
 
   return (
     <AppLayout primarySection="drawer">
       <div slot="drawer" className="flex flex-col justify-between h-full p-m">
         <header className="flex flex-col gap-m">
-          <h1 className="text-l m-0">{vaadin.documentTitleSignal}</h1>
+          <span className="font-semibold text-l">Film Advisor</span>
           <SideNav onNavigate={({ path }) => navigate(path!)} location={location}>
-            {createMenuItems().map(({ to, title }) => (
+            {createMenuItems().map(({ to, title, icon }) => (
               <SideNavItem path={to} key={to}>
+                {icon ? <Icon src={icon} slot="prefix"></Icon> : <></>}
                 {title}
               </SideNavItem>
             ))}
@@ -37,14 +40,12 @@ export default function MainLayout() {
       </div>
 
       <DrawerToggle slot="navbar" aria-label="Menu toggle"></DrawerToggle>
-      <h2 slot="navbar" className="text-l m-0">
-        {vaadin.documentTitleSignal}
-      </h2>
+      <h1 slot="navbar" className="text-l m-0">
+        {documentTitleSignal}
+      </h1>
 
-      <Suspense fallback={<ProgressBar indeterminate className="m-0" />}>
-        <section className="view">
-          <Outlet />
-        </section>
+      <Suspense>
+        <Outlet />
       </Suspense>
     </AppLayout>
   );
