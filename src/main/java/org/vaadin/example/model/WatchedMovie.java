@@ -29,5 +29,13 @@ public class WatchedMovie {
     @Column(nullable = false)
     private boolean liked; // true = "me gusta", false = "no me gusta"
 
-    // Getters y setters
+    @Override
+    public String toString() {
+        return "WatchedMovie{" +
+                "id=" + id +
+                ", user=" + user +
+                ", movie=" + movie +
+                ", liked=" + liked +
+                '}';
+    }
 }

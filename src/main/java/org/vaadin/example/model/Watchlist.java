@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.List;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -20,9 +22,15 @@ public class Watchlist {
     @JoinColumn(nullable = false)
     private User user;
 
-    @ManyToOne
-    @JoinColumn(nullable = false)
-    private Movie movie;
+    @ManyToMany(mappedBy = "watchlists", cascade = CascadeType.ALL,
+             fetch = FetchType.EAGER)
+    private List<Movie> movies;
 
-    // Getters y setters
+    @Override
+   public String toString() {
+        return "Watchlist{" +
+                "id=" + id +
+                ", movies=" + movies +
+                '}';
+    }
 }
