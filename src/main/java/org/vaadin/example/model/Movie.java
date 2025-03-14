@@ -42,12 +42,8 @@ public class Movie {
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<WatchedMovie> watchedMovies;
 
-    @JsonIgnore
-    @ManyToMany(mappedBy = "movie", cascade = CascadeType.ALL)
-    @JoinTable(name = "MOVIE_WATCHLIST_JOIN_TABLE",
-            joinColumns = @JoinColumn(name = "MOVIE_FK"),
-            inverseJoinColumns = @JoinColumn(name = "WATCHLIST_FK"))
-    private List<Watchlist> watchlists = new ArrayList<>();
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<WatchlistEntry> watchlistEntries = new ArrayList<>();
 
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<DiscardedMovie> discardedMovies = new ArrayList<>();
