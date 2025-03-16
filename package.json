@@ -3,6 +3,7 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
+    "@fontsource/oswald": "4.5.0",
     "@polymer/polymer": "3.5.2",
     "@vaadin/bundles": "24.6.6",
     "@vaadin/common-frontend": "0.0.19",
@@ -28,8 +29,7 @@
     "proj4": "2.12.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "react-router-dom": "6.29.0",
-    "@fontsource/oswald": "4.5.0"
+    "react-router-dom": "6.29.0"
   },
   "devDependencies": {
     "@babel/preset-react": "7.26.3",
@@ -51,6 +51,7 @@
     "@vitejs/plugin-react": "4.3.4",
     "async": "3.2.6",
     "glob": "10.4.5",
+    "prettier": "3.3.3",
     "rollup-plugin-brotli": "3.1.0",
     "rollup-plugin-visualizer": "5.14.0",
     "strip-css-comments": "5.0.0",
@@ -60,8 +61,7 @@
     "vite-plugin-checker": "0.8.0",
     "workbox-build": "7.3.0",
     "workbox-core": "7.3.0",
-    "workbox-precaching": "7.3.0",
-    "prettier": "3.3.3"
+    "workbox-precaching": "7.3.0"
   },
   "vaadin": {
     "dependencies": {
@@ -123,7 +123,7 @@
       "workbox-core": "7.3.0",
       "workbox-precaching": "7.3.0"
     },
-    "hash": "7efd12b97d78ba6d5709dbcb8992f3230ea50d0218ef18b7d2d2d4be78625ca5"
+    "hash": "567d3bfe05eb0b000f69ef14ccf82498435379bdfec2fe398b90d376bd7e4eff"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -162,6 +162,7 @@
     "@vaadin/react-components-pro": "$@vaadin/react-components-pro",
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
-    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles"
+    "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
+    "@fontsource/oswald": "$@fontsource/oswald"
   }
 }
