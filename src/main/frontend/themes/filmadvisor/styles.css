@@ -1,0 +1,10 @@
+@import url('@fontsource/oswald/index.css');    html {
+      --lumo-primary-color: hsla(214, 90%, 52%, 1);
+      --lumo-primary-color-50pct: hsla(214, 90%, 52%, 0.5);
+      --lumo-primary-color-10pct: hsla(214, 90%, 52%, 0.1);
+      --lumo-line-height-m: 1.4;
+      --lumo-line-height-s: 1.2;
+      --lumo-line-height-xs: 1.1;
+--lumo-font-family: Oswald;
+
+    }

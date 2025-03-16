@@ -1,0 +1,9 @@
+{
+  "lumoImports" : [ "typography", "color", "spacing", "badge", "utility" ],
+  "assets" : {
+    "@fontsource/oswald" : {
+      "*.css" : "@fontsource/oswald",
+      "files/*" : "@fontsource/oswald/files"
+    }
+  }
+}
