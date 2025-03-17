@@ -2,11 +2,19 @@ import { Box, Card, CardContent, Typography, Container, Grid } from "@mui/materi
 
 
 export default function MovieCard({ movie }) {
-  return (
-    <Container maxWidth="md">
-      <Box sx={{ my: 4 }}>
-        <Grid container justifyContent="center">
-          <Grid item xs={12} sm={6}>
+return (
+  <Container maxWidth="md" style={{ marginTop: "20px", maxHeight: "80vh", overflow: "hidden" }}>
+    <Box sx={{ my: 4 }}>
+      <Grid container justifyContent="center">
+        <Grid item xs={12} sm={6} md={4} key={movie.id}>
+          {/* Contenedor con control de ancho */}
+          <div
+            style={{
+              minWidth: "250px", // Ancho mínimo de la card
+              maxWidth: "350px", // Ancho máximo de la card
+              width: "100%",     // La card ocupa todo el espacio disponible, pero dentro del rango
+            }}
+          >
             <Card>
               <CardContent>
                 <Typography variant="h5" component="h2">
@@ -18,10 +26,11 @@ export default function MovieCard({ movie }) {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
+          </div>
         </Grid>
-      </Box>
-    </Container>
-  );
+      </Grid>
+    </Box>
+  </Container>
+);
 }
 
