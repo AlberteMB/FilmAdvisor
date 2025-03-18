@@ -1,14 +1,18 @@
 import { useState } from "react";
-import { Grid, Container } from "@mui/material"; // Asegúrate de importar los componentes necesarios
+import { Grid, Container } from "@mui/material";
 import moviesData from "../data/movies.json";
 import MovieCard from "../components/MovieCard";
+import { Movie } from "../models/movie";
+
 
 export default function MoviesRandomizer() {
-  const [selectedMovies, setSelectedMovies] = useState([]);
-  const [numMovies, setNumMovies] = useState(3); // Valor inicial
+  // Estado para almacenar las películas seleccionadas
+  const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
+  // Estado para la cantidad de películas a mostrar
+  const [numMovies, setNumMovies] = useState<number>(3);
 
   // Función para obtener películas aleatorias
-  const getRandomMovies = (count) => {
+  const getRandomMovies = (count: number) => {
     const shuffled = [...moviesData].sort(() => Math.random() - 0.5); // Mezcla el array
     setSelectedMovies(shuffled.slice(0, count)); // Toma las primeras 'count' películas
   };
@@ -18,7 +22,11 @@ export default function MoviesRandomizer() {
       {/* Selector de cantidad */}
       <label>
         Mostrar:
-        <select value={numMovies} onChange={(e) => setNumMovies(Number(e.target.value))} style={{ margin: "10px" }}>
+        <select
+          value={numMovies}
+          onChange={(e) => setNumMovies(Number(e.target.value))}
+          style={{ margin: "10px" }}
+        >
           <option value={3}>3 películas</option>
           <option value={6}>6 películas</option>
           <option value={9}>9 películas</option>
@@ -26,7 +34,10 @@ export default function MoviesRandomizer() {
       </label>
 
       {/* Botón para obtener películas aleatorias */}
-      <button onClick={() => getRandomMovies(numMovies)} style={{ padding: "10px", cursor: "pointer" }}>
+      <button
+        onClick={() => getRandomMovies(numMovies)}
+        style={{ padding: "10px", cursor: "pointer" }}
+      >
         Obtener películas
       </button>
 
@@ -43,3 +54,4 @@ export default function MoviesRandomizer() {
     </div>
   );
 }
+
