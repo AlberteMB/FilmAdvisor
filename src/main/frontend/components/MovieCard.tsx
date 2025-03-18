@@ -1,6 +1,6 @@
-import { Box, Card, CardContent, Typography, Container, Grid } from "@mui/material";
+import { Card, CardContent, Typography, Box } from "@mui/material";
 import { Movie } from "../models/movie";
-
+import "../themes/MovieCard.css";
 
 interface MovieCardProps {
   movie: Movie;
@@ -8,34 +8,27 @@ interface MovieCardProps {
 
 export default function MovieCard({ movie }: MovieCardProps) {
   return (
-    <Container maxWidth="md" style={{ marginTop: "20px", maxHeight: "80vh", overflow: "hidden" }}>
-      <Box sx={{ my: 4 }}>
-        <Grid container justifyContent="center">
-          <Grid item xs={12} sm={6} md={4} key={movie.id}>
-            {/* Contenedor con control de ancho */}
-            <div
-              style={{
-                minWidth: "250px",
-                maxWidth: "350px",
-                width: "100%",
-              }}
-            >
-              <Card>
-                <CardContent>
-                  <Typography variant="h5" component="h2">
-                    {movie.title} ({movie.year})
-                  </Typography>
-                  <p><strong>Director:</strong> {movie.director}</p>
-                  <p><strong>Género:</strong> {movie.genre.join(", ")}</p>
-                  <p><strong>Puntuación:</strong> ⭐ {movie.rating}</p>
-                  <p><strong>Disponible en:</strong> {movie.streamingPlatforms.join(", ")}</p>
-                </CardContent>
-              </Card>
-            </div>
-          </Grid>
-        </Grid>
-      </Box>
-    </Container>
+    <Box sx={{ display: "flex", justifyContent: "center", my: 2 }}>
+      <Card>
+        <CardContent className="card-content">
+          <Typography variant="h6" component="h2" className="title">
+            {movie.title} ({movie.year})
+          </Typography>
+          <Typography variant="body2" color="text.secondary" className="text">
+            <strong>Director:</strong> {movie.director}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" className="text">
+            <strong>Género:</strong> {movie.genre.join(", ")}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" className="text">
+            <strong>Puntuación:</strong> ⭐ {movie.rating}
+          </Typography>
+          <Typography variant="body2" color="text.secondary" className="text">
+            <strong>Disponible en:</strong> {movie.streamingPlatforms.join(", ")}
+          </Typography>
+        </CardContent>
+      </Card>
+    </Box>
   );
 }
 

@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adapting css from cards.">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/Movie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.copilot-plugin" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.copilot-plugin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/components/Filter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/themes/MovieCard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/Movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/model/Movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor/theme.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/theme.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,31 +67,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/albertemb/Projects/Sandbox/FilmAdvisor/src/main/frontend/data&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Application.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/albertemb/Projects/Sandbox/FilmAdvisor/src/main/frontend/model",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/frontend/themes" />
+      <recent name="$PROJECT_DIR$/src/main/frontend/model" />
       <recent name="$PROJECT_DIR$/src/main/frontend/data" />
       <recent name="$PROJECT_DIR$/src/main/frontend/views" />
       <recent name="$PROJECT_DIR$/src/main/frontend/pages" />
-      <recent name="$PROJECT_DIR$/src/main/frontend/layout" />
-      <recent name="$PROJECT_DIR$/src/main/frontend/style" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -1,0 +1,32 @@
+.movie-card-container {
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card-content {
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.movie-title {
+  line-height: 1.2;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.movie-text {
+  margin-bottom: 4px;
+}

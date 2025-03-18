@@ -6,20 +6,20 @@ import { Movie } from "../models/movie";
 
 
 export default function MoviesRandomizer() {
-  // Estado para almacenar las películas seleccionadas
+  // State from selectedMovies
   const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
-  // Estado para la cantidad de películas a mostrar
+  // State from numMovies
   const [numMovies, setNumMovies] = useState<number>(3);
 
-  // Función para obtener películas aleatorias
+  // Get function to get random movies
   const getRandomMovies = (count: number) => {
-    const shuffled = [...moviesData].sort(() => Math.random() - 0.5); // Mezcla el array
-    setSelectedMovies(shuffled.slice(0, count)); // Toma las primeras 'count' películas
+    const shuffled = [...moviesData].sort(() => Math.random() - 0.5); // Mix array
+    setSelectedMovies(shuffled.slice(0, count)); // Take the first "count" movies
   };
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
-      {/* Selector de cantidad */}
+      {/* Quantity selector*/}
       <label>
         Mostrar:
         <select
@@ -33,7 +33,7 @@ export default function MoviesRandomizer() {
         </select>
       </label>
 
-      {/* Botón para obtener películas aleatorias */}
+      {/* Botton to get random movies */}
       <button
         onClick={() => getRandomMovies(numMovies)}
         style={{ padding: "10px", cursor: "pointer" }}
@@ -41,7 +41,7 @@ export default function MoviesRandomizer() {
         Obtener películas
       </button>
 
-      {/* Contenedor de películas */}
+      {/* Container with movies */}
       <Container maxWidth="md" style={{ marginTop: "20px" }}>
         <Grid container spacing={2}>
           {selectedMovies.map((movie) => (
