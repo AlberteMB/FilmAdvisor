@@ -3,6 +3,7 @@ import { effect, signal } from '@vaadin/hilla-react-signals';
 import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem } from '@vaadin/react-components';
 import { Suspense, useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { MovieFilter } from '../components/MovieFilter';
 
 const documentTitleSignal = signal('');
 effect(() => {
@@ -36,6 +37,7 @@ export default function MainLayout() {
               </SideNavItem>
             ))}
           </SideNav>
+          <MovieFilter/>
         </header>
       </div>
 

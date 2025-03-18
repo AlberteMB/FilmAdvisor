@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adapting css from cards.">
-      <change afterPath="$PROJECT_DIR$/.idea/.copilot-plugin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/components/Filter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/themes/MovieCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/components/Panel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.copilot-plugin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.copilot-plugin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/Movie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/model/Movie.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/Filter.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor/theme.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/theme.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/MovieCard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/MovieCard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/themes/theme.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor/theme.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/views/@layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/views/@layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,21 +79,22 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/albertemb/Projects/Sandbox/FilmAdvisor/src/main/frontend/model",
+    "last_opened_file_path": "/home/albertemb/Projects/Sandbox/FilmAdvisor/src/main/frontend/themes/filmadvisor",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vaadin.notify.HotSwap": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor" />
       <recent name="$PROJECT_DIR$/src/main/frontend/themes" />
       <recent name="$PROJECT_DIR$/src/main/frontend/model" />
       <recent name="$PROJECT_DIR$/src/main/frontend/data" />
       <recent name="$PROJECT_DIR$/src/main/frontend/views" />
-      <recent name="$PROJECT_DIR$/src/main/frontend/pages" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Grid, Container } from "@mui/material";
 import moviesData from "../data/movies.json";
 import MovieCard from "../components/MovieCard";
-import { Movie } from "../models/movie";
+import { Movie } from "../models/movie.ts";
 
 
 export default function MoviesRandomizer() {
