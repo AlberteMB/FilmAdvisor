@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adapting css from cards.">
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/types/PanelProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.copilot-plugin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.copilot-plugin" afterDir="false" />
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Solving issues about imports. PanelProps.ts was created.">
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/components/FilterPanel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/Panel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/Panel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/views/@layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/views/@layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/Panel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/types/PanelProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/types/PanelProps.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742214297358</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Solving issues about imports. PanelProps.ts was created.">
+      <option name="closed" value="true" />
+      <created>1742374719017</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742374719017</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -139,6 +144,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding MovieCard, MovieRandomizer and json with 20 movies." />
     <MESSAGE value="Adapting css from cards." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adapting css from cards." />
+    <MESSAGE value="Solving issues about imports. PanelProps.ts was created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solving issues about imports. PanelProps.ts was created." />
   </component>
 </project>
