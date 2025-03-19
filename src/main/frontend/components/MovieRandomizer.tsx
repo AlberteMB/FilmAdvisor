@@ -2,13 +2,14 @@ import { useState } from "react";
 import { Grid, Container } from "@mui/material";
 import moviesData from "../data/movies.json";
 import MovieCard from "../components/MovieCard";
-import { Movie } from "../models/movie.ts";
+import { Movie } from "../model/Movie";
 
+const movies: Movie[] = moviesData;
 
 export default function MoviesRandomizer() {
-  // State from selectedMovies
+  // State for selectedMovies
   const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
-  // State from numMovies
+  // State for numMovies
   const [numMovies, setNumMovies] = useState<number>(3);
 
   // Get function to get random movies
@@ -33,7 +34,7 @@ export default function MoviesRandomizer() {
         </select>
       </label>
 
-      {/* Botton to get random movies */}
+      {/* Button to get random movies */}
       <button
         onClick={() => getRandomMovies(numMovies)}
         style={{ padding: "10px", cursor: "pointer" }}

@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { PanelProps } from "../types/PanelProps";
 
-export function Panel({ title, children }) {
+export function Panel({ title, children }: PanelProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,7 +17,7 @@ export function Panel({ title, children }) {
   );
 }
 
-export function YearPanel({ title, children }) {
+export function YearPanel({ title, children }: PanelProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -32,7 +33,7 @@ export function YearPanel({ title, children }) {
   );
 }
 
-export function GenrePanel({ title, children }) {
+export function GenrePanel({ title, children }: PanelProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -48,7 +49,7 @@ export function GenrePanel({ title, children }) {
   );
 }
 
-export function PlatformPanel({ title, children }) {
+export function PlatformPanel({ title, children }: PanelProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
