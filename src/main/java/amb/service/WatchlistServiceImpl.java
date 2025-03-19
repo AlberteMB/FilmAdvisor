@@ -6,6 +6,7 @@ import amb.model.Watchlist;
 import amb.repository.WatchlistRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class WatchlistServiceImpl implements WatchlistService {
@@ -14,32 +15,40 @@ public class WatchlistServiceImpl implements WatchlistService {
     private WatchlistRepository watchlistRepository;
 
     @Override
-    public List<Watchlist> getAllWatchlists(String id) {
-        return List.of();
+    public List<Watchlist> getAllWatchlists() {
+        return watchlistRepository.findAll();
     }
 
     @Override
     public Watchlist createWatchlist(Watchlist watchlist) {
-        return null;
+        return watchlistRepository.save(watchlist);
     }
 
     @Override
     public Watchlist getWatchlistById(String id) {
-        return null;
+        return watchlistRepository.findById(id).orElse(null);
     }
 
     @Override
     public Watchlist updateWatchlist(String id, Watchlist watchlistDetails) {
+        Optional<Watchlist> watchlist = watchlistRepository.findById(id);
+        if (watchlist.isPresent()) {
+            watchlist.get().setUser(watchlistDetails.getUser());
+            watchlist.get().setWatchlistEntries(watchlistDetails.getWatchlistEntries());
+            return watchlistRepository.save(watchlist.get());
+        }
         return null;
     }
 
     @Override
     public boolean deleteWatchlist(String id) {
-        return false;
+        watchlistRepository.deleteById(id);
+        Optional<Watchlist> watchlist = watchlistRepository.findById(id);
+        return watchlist.isPresent();
     }
 
     @Override
-    public long countWatchlist(String id) {
-        return 0;
+    public long countWatchlist() {
+        return watchlistRepository.count();
     }
 }

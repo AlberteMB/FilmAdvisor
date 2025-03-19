@@ -5,10 +5,10 @@ import amb.model.WatchedMovie;
 import java.util.List;
 
 public interface WatchedMovieService {
-    List<WatchedMovie> getAllWatchedMovies(String id);
+    List<WatchedMovie> getAllWatchedMovies();
     WatchedMovie createWatchedMovie(WatchedMovie watchedMovie);
     WatchedMovie getWatchedMovieById(String id);
     WatchedMovie updateWatchedMovie(String id, WatchedMovie watchedMovieDetails);
     boolean deleteWatchedMovie(String id);
-    long countWatchedMovie(String id);
+    long countWatchedMovie();
 }

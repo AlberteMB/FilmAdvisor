@@ -5,6 +5,7 @@ import amb.model.WatchedMovie;
 import amb.repository.WatchedMovieRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public class WatchedMovieServiceImpl implements WatchedMovieService {
 
@@ -12,32 +13,41 @@ public class WatchedMovieServiceImpl implements WatchedMovieService {
     private WatchedMovieRepository watchedMovieRepository;
 
     @Override
-    public List<WatchedMovie> getAllWatchedMovies(String id) {
-        return List.of();
+    public List<WatchedMovie> getAllWatchedMovies() {
+        return watchedMovieRepository.findAll();
     }
 
     @Override
     public WatchedMovie createWatchedMovie(WatchedMovie watchedMovie) {
-        return null;
+        return watchedMovieRepository.save(watchedMovie);
     }
 
     @Override
     public WatchedMovie getWatchedMovieById(String id) {
-        return null;
+        return watchedMovieRepository.findById(id).orElse(null);
     }
 
     @Override
     public WatchedMovie updateWatchedMovie(String id, WatchedMovie watchedMovieDetails) {
+        Optional<WatchedMovie> watchedMovie = watchedMovieRepository.findById(id);
+        if(watchedMovie.isPresent()){
+            watchedMovie.get().setUser(watchedMovieDetails.getUser());
+            watchedMovie.get().setMovie(watchedMovieDetails.getMovie());
+            watchedMovie.get().setLiked(watchedMovieDetails.isLiked());
+            return watchedMovieRepository.save(watchedMovie.get());
+        }
         return null;
     }
 
     @Override
     public boolean deleteWatchedMovie(String id) {
-        return false;
+        watchedMovieRepository.deleteById(id);
+        Optional<WatchedMovie> watchedMovie = watchedMovieRepository.findById(id);
+        return watchedMovie.isPresent();
     }
 
     @Override
-    public long countWatchedMovie(String id) {
-        return 0;
+    public long countWatchedMovie() {
+        return watchedMovieRepository.count();
     }
 }
