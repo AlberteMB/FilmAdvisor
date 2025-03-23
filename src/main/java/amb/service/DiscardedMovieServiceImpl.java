@@ -5,6 +5,7 @@ import amb.model.DiscardedMovie;
 import amb.repository.DiscardedMovieRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 public class DiscardedMovieServiceImpl implements DiscardedMovieService {
 
@@ -13,31 +14,40 @@ public class DiscardedMovieServiceImpl implements DiscardedMovieService {
 
     @Override
     public List<DiscardedMovie> getAllDiscardedMovies() {
-        return List.of();
+        return discardedMovieRepository.findAll();
     }
 
     @Override
     public DiscardedMovie createDiscardedMovie(DiscardedMovie discardedMovie) {
-        return null;
+        return discardedMovieRepository.save(discardedMovie);
     }
 
     @Override
     public DiscardedMovie getDiscardedMovieById(String id) {
-        return null;
+        return discardedMovieRepository.findById(id).orElse(null);
     }
 
     @Override
     public DiscardedMovie updateDiscardedMovie(String id, DiscardedMovie discardedMovieDetails) {
+        Optional<DiscardedMovie> discardedMovie = discardedMovieRepository.findById(id);
+        if(discardedMovie.isPresent()){
+            discardedMovie.get().setUser(discardedMovieDetails.getUser());
+            discardedMovie.get().setMovie(discardedMovieDetails.getMovie());
+            return discardedMovieRepository.save(discardedMovie.get());
+        }
         return null;
     }
 
     @Override
     public boolean deleteDiscardedMovie(String id) {
-        return false;
+        discardedMovieRepository.deleteById(id);
+        Optional<DiscardedMovie> discardedMovie = discardedMovieRepository.findById(id);
+        return  discardedMovie.isPresent();
     }
 
     @Override
-    public boolean discardMovie(String id) {
-        return false;
+    public Long countDiscardedMovie() {
+        return discardedMovieRepository.count();
     }
+
 }

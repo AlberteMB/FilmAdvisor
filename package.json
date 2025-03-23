@@ -3,7 +3,10 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@fontsource/oswald": "4.5.0",
+    "@mui/material": "^6.4.7",
     "@polymer/polymer": "3.5.2",
     "@vaadin/bundles": "24.6.6",
     "@vaadin/common-frontend": "0.0.19",
@@ -123,7 +126,7 @@
       "workbox-core": "7.3.0",
       "workbox-precaching": "7.3.0"
     },
-    "hash": "567d3bfe05eb0b000f69ef14ccf82498435379bdfec2fe398b90d376bd7e4eff"
+    "hash": "1dca145a0a4ad16853f7e7fbe092b6efa1f8ecb8ae9e35d2bb88cd74f7965298"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -163,6 +166,9 @@
     "@vaadin/vaadin-themable-mixin": "$@vaadin/vaadin-themable-mixin",
     "@vaadin/vaadin-lumo-styles": "$@vaadin/vaadin-lumo-styles",
     "@vaadin/vaadin-material-styles": "$@vaadin/vaadin-material-styles",
-    "@fontsource/oswald": "$@fontsource/oswald"
+    "@fontsource/oswald": "$@fontsource/oswald",
+    "@emotion/react": "$@emotion/react",
+    "@emotion/styled": "$@emotion/styled",
+    "@mui/material": "$@mui/material"
   }
 }

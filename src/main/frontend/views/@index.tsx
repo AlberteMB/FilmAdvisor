@@ -1,13 +1,14 @@
 import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
+import MovieCard from "../components/MovieCard.jsx";
+import MovieRandomizer from "../components/MovieRandomizer.jsx";
 
 export const config: ViewConfig = { menu: { order: 0, icon: 'line-awesome/svg/file.svg' }, title: 'Main' };
 
 export default function MainView() {
   return (
-    <div className="flex flex-col h-full items-center justify-center p-l text-center box-border">
-      <img style={{ width: '200px' }} src="images/empty-plant.png" />
-      <h2>This place intentionally left empty</h2>
-      <p>It’s a place where you can grow your own UI 🤗</p>
+    <div className="p-4" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <h1 className="text-2xl">Random Movies</h1>
+      <MovieRandomizer />
     </div>
   );
 }

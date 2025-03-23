@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": 2010,
+    "genre": ["Sci-Fi", "Thriller"],
+    "director": "Christopher Nolan",
+    "rating": 8.8,
+    "streamingPlatforms": ["Netflix", "HBO Max"]
+  },
+  {
+    "id": 2,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": ["Action", "Crime"],
+    "director": "Christopher Nolan",
+    "rating": 9.0,
+    "streamingPlatforms": ["Prime Video"]
+  },
+  {
+    "id": 3,
+    "title": "Parasite",
+    "year": 2019,
+    "genre": ["Drama", "Thriller"],
+    "director": "Bong Joon-ho",
+    "rating": 8.6,
+    "streamingPlatforms": ["Hulu"]
+  },
+  {
+    "id": 4,
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": ["Sci-Fi", "Drama"],
+    "director": "Christopher Nolan",
+    "rating": 8.7,
+    "streamingPlatforms": ["HBO Max", "Netflix"]
+  },
+  {
+    "id": 5,
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": ["Crime", "Drama"],
+    "director": "Francis Ford Coppola",
+    "rating": 9.2,
+    "streamingPlatforms": ["Paramount+"]
+  },
+  {
+    "id": 6,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": ["Crime", "Drama"],
+    "director": "Quentin Tarantino",
+    "rating": 8.9,
+    "streamingPlatforms": ["Prime Video"]
+  },
+  {
+    "id": 7,
+    "title": "Fight Club",
+    "year": 1999,
+    "genre": ["Drama"],
+    "director": "David Fincher",
+    "rating": 8.8,
+    "streamingPlatforms": ["HBO Max"]
+  },
+  {
+    "id": 8,
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": ["Sci-Fi", "Action"],
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "rating": 8.7,
+    "streamingPlatforms": ["HBO Max"]
+  },
+  {
+    "id": 9,
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": ["Drama"],
+    "director": "Frank Darabont",
+    "rating": 9.3,
+    "streamingPlatforms": ["Netflix"]
+  },
+  {
+    "id": 10,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": ["Drama", "Romance"],
+    "director": "Robert Zemeckis",
+    "rating": 8.8,
+    "streamingPlatforms": ["Prime Video"]
+  },
+  {
+    "id": 11,
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "genre": ["Fantasy", "Adventure"],
+    "director": "Peter Jackson",
+    "rating": 8.8,
+    "streamingPlatforms": ["HBO Max"]
+  },
+  {
+    "id": 12,
+    "title": "The Lord of the Rings: The Two Towers",
+    "year": 2002,
+    "genre": ["Fantasy", "Adventure"],
+    "director": "Peter Jackson",
+    "rating": 8.7,
+    "streamingPlatforms": ["HBO Max"]
+  },
+  {
+    "id": 13,
+    "title": "The Lord of the Rings: The Return of the King",
+    "year": 2003,
+    "genre": ["Fantasy", "Adventure"],
+    "director": "Peter Jackson",
+    "rating": 9.0,
+    "streamingPlatforms": ["HBO Max"]
+  },
+  {
+    "id": 14,
+    "title": "The Social Network",
+    "year": 2010,
+    "genre": ["Drama", "Biography"],
+    "director": "David Fincher",
+    "rating": 7.8,
+    "streamingPlatforms": ["Netflix"]
+  },
+  {
+    "id": 15,
+    "title": "Joker",
+    "year": 2019,
+    "genre": ["Crime", "Drama"],
+    "director": "Todd Phillips",
+    "rating": 8.4,
+    "streamingPlatforms": ["HBO Max"]
+  },
+  {
+    "id": 16,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "genre": ["Action", "Sci-Fi"],
+    "director": "Anthony Russo, Joe Russo",
+    "rating": 8.4,
+    "streamingPlatforms": ["Disney+"]
+  },
+  {
+    "id": 17,
+    "title": "Whiplash",
+    "year": 2014,
+    "genre": ["Drama", "Music"],
+    "director": "Damien Chazelle",
+    "rating": 8.5,
+    "streamingPlatforms": ["Prime Video"]
+  },
+  {
+    "id": 18,
+    "title": "The Grand Budapest Hotel",
+    "year": 2014,
+    "genre": ["Comedy", "Drama"],
+    "director": "Wes Anderson",
+    "rating": 8.1,
+    "streamingPlatforms": ["Hulu"]
+  },
+  {
+    "id": 19,
+    "title": "Django Unchained",
+    "year": 2012,
+    "genre": ["Western", "Drama"],
+    "director": "Quentin Tarantino",
+    "rating": 8.4,
+    "streamingPlatforms": ["Netflix"]
+  },
+  {
+    "id": 20,
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "genre": ["Sci-Fi", "Drama"],
+    "director": "Denis Villeneuve",
+    "rating": 8.0,
+    "streamingPlatforms": ["HBO Max"]
+  }
+]

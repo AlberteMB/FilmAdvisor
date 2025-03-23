@@ -10,5 +10,5 @@ public interface DiscardedMovieService {
     DiscardedMovie getDiscardedMovieById(String id);
     DiscardedMovie updateDiscardedMovie(String id, DiscardedMovie discardedMovieDetails);
     boolean deleteDiscardedMovie(String id);
-    boolean discardMovie(String id);
+    Long countDiscardedMovie();
 }

@@ -35,6 +35,10 @@ public class User {
             regexp = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$",
             message = "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character")
     private String password;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
     private enum Role {
         USER,
         ADMIN
