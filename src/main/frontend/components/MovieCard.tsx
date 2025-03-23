@@ -6,7 +6,7 @@ interface MovieCardProps {
   movie: Movie;
 }
 
-export default function MovieCard({ movie }: MovieCardProps) {
+const MovieCard = ({ movie }: MovieCardProps) => {
   return (
     <Box sx={{ display: "flex", justifyContent: "center", my: 2 }}>
       <Card>
@@ -30,5 +30,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
       </Card>
     </Box>
   );
-}
+};
+
+export default MovieCard;
 

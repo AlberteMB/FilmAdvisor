@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Programming CRUD in all the services.">
-      <change beforePath="$PROJECT_DIR$/.idea/.copilot-plugin" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.copilot-plugin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/frontend/data/genres.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/views/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/views/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/FilterPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/FilterPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

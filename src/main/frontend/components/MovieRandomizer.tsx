@@ -6,7 +6,7 @@ import { Movie } from "../model/Movie";
 
 const movies: Movie[] = moviesData;
 
-export default function MoviesRandomizer() {
+const MoviesRandomizer = () => {
   // State for selectedMovies
   const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
   // State for numMovies
@@ -54,5 +54,7 @@ export default function MoviesRandomizer() {
       </Container>
     </div>
   );
-}
+};
+
+export default MoviesRandomizer;
 

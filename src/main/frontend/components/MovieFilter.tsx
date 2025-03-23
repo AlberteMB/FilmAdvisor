@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { GenrePanel, YearPanel, PlatformPanel } from "../components/FilterPanel";
 
-export default function MovieFilter() {
+const MovieFilter = () => {
   const [openPanel, setOpenPanel] = useState<string | null>(null);
 
   // Function to manage panel visibility
@@ -38,4 +38,6 @@ export default function MovieFilter() {
       </YearPanel>
     </div>
   );
-}
+};
+
+export default MovieFilter;
