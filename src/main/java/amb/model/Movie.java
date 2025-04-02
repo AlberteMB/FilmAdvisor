@@ -46,15 +46,15 @@ public class Movie {
     private Rating rating;
 
     @ElementCollection
-    private List<String> actors;
+    private List<String> actors = new ArrayList<>();;
 
-    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<WatchedMovie> watchedMovies;
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.REFRESH)
+    private List<WatchedMovie> watchedMovies = new ArrayList<>();
 
-    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<WatchlistEntry> watchlistEntries = new ArrayList<>();
+    //@OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
+    //private List<WatchlistEntry> watchlistEntries = new ArrayList<>();
 
-    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.REFRESH)
     private List<DiscardedMovie> discardedMovies = new ArrayList<>();
 
     @Override

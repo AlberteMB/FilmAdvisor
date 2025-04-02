@@ -1,6 +1,8 @@
 package amb.model;
 
 import jakarta.persistence.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.validation.constraints.NotBlank;
@@ -39,7 +41,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    private enum Role {
+    public enum Role {
         USER,
         ADMIN
     }
@@ -47,14 +49,14 @@ public class User {
     //@OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     //private UserPreferences preferences;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<WatchedMovie> watchedMovies;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<WatchedMovie> watchedMovies = new ArrayList<>();;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Watchlist> watchlistMovies;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Watchlist> watchlist = new ArrayList<>();;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<DiscardedMovie> discardedMovies;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<DiscardedMovie> discardedMovies = new ArrayList<>();;
 
 
     @Override

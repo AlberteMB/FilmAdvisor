@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Programming CRUD in all the services.">
-      <change afterPath="$PROJECT_DIR$/src/main/frontend/data/genres.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/FilterPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/FilterPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieFilter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/frontend/components/MovieRandomizer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/model/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,25 +63,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/albertemb/Projects/Sandbox/FilmAdvisor/src/main/frontend/themes/filmadvisor&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vaadin.notify.HotSwap&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.Application.executor": "Run",
+    "JUnit.EntityRelationshipsTest.executor": "Run",
+    "JUnit.EntityRelationshipsTest.testCascadeOperations.executor": "Run",
+    "JUnit.EntityRelationshipsTest.testUserValidation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "develop",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/albertemb/Projects/Sandbox/FilmAdvisor/src/main/frontend/themes/filmadvisor",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vaadin.notify.HotSwap": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/frontend/themes/filmadvisor" />
@@ -91,6 +93,44 @@
       <recent name="$PROJECT_DIR$/src/main/frontend/data" />
       <recent name="$PROJECT_DIR$/src/main/frontend/views" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EntityRelationshipsTest.testUserValidation">
+    <configuration name="EntityRelationshipsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmAdvisor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EntityRelationshipsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityRelationshipsTest.testCascadeOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmAdvisor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EntityRelationshipsTest" />
+      <option name="METHOD_NAME" value="testCascadeOperations" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityRelationshipsTest.testUserValidation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FilmAdvisor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EntityRelationshipsTest" />
+      <option name="METHOD_NAME" value="testUserValidation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EntityRelationshipsTest.testUserValidation" />
+        <item itemvalue="JUnit.EntityRelationshipsTest" />
+        <item itemvalue="JUnit.EntityRelationshipsTest.testCascadeOperations" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
