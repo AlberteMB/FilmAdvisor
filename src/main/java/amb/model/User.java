@@ -52,8 +52,8 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<WatchedMovie> watchedMovies = new ArrayList<>();;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Watchlist> watchlist = new ArrayList<>();;
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Watchlist watchlist;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<DiscardedMovie> discardedMovies = new ArrayList<>();;
