@@ -1,5 +1,7 @@
 package amb.service;
 
+import amb.model.Movie;
+import amb.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import amb.model.Watchlist;
@@ -51,4 +53,20 @@ public class WatchlistServiceImpl implements WatchlistService {
     public long countWatchlist() {
         return watchlistRepository.count();
     }
+
+    @Override
+    public void addMovieToWatchlist(User user, Movie movie) {
+        Watchlist watchlist = user.getWatchlist();
+
+        if (watchlist == null) {
+            watchlist = new Watchlist();
+            watchlist.setUser(user);
+        }
+
+        watchlist.addMovie(movie); // Ahora usamos el método de la entidad
+        watchlistRepository.save(watchlist);
+    }
+
 }
+
+

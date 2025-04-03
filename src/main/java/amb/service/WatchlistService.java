@@ -1,5 +1,7 @@
 package amb.service;
 
+import amb.model.Movie;
+import amb.model.User;
 import amb.model.Watchlist;
 
 import java.util.List;
@@ -12,4 +14,5 @@ public interface WatchlistService {
     Watchlist updateWatchlist(String id, Watchlist watchlistDetails);
     boolean deleteWatchlist(String id);
     long countWatchlist();
+    void addMovieToWatchlist(User user, Movie movie);
 }

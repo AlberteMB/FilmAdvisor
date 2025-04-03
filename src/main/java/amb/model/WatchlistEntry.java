@@ -31,6 +31,10 @@ public class WatchlistEntry {
 
     private String note;
 
+    public WatchlistEntry(Watchlist watchlist, Movie movie) {
+        this.watchlist = watchlist;
+        this.movie = movie;
+    }
 
 }
 

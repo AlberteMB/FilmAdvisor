@@ -2,12 +2,17 @@ import amb.model.Movie;
 import amb.model.User;
 import amb.model.Watchlist;
 import amb.model.WatchlistEntry;
+import amb.repository.UserRepository;
+import amb.repository.WatchlistRepository;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 import java.util.Set;
@@ -15,7 +20,15 @@ import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+
 public class EntityRelationshipsTest {
+
+    @Autowired
+    UserRepository userRepository;
+
+    @Autowired
+    WatchlistRepository watchlistRepository;
+
     private Validator validator;
     private User user;
     private Movie movie;
@@ -49,6 +62,7 @@ public class EntityRelationshipsTest {
         watchlistEntry.setId(UUID.randomUUID().toString());
         watchlistEntry.setWatchlist(watchlist);
         watchlistEntry.setMovie(movie);
+
     }
 
     @Test
@@ -88,20 +102,13 @@ public class EntityRelationshipsTest {
 
     @Test
     void testDuplicateMovieInWatchlist() {
-        watchlist.getWatchlistEntries().add(watchlistEntry);
+        watchlist.addMovie(movie); // Primera adición
 
-        WatchlistEntry duplicateEntry = new WatchlistEntry();
-        duplicateEntry.setId(UUID.randomUUID().toString());
-        duplicateEntry.setWatchlist(watchlist);
-        duplicateEntry.setMovie(movie);
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            watchlist.addMovie(movie); // Intento de añadir duplicado
+        });
 
-        watchlist.getWatchlistEntries().add(duplicateEntry);
-
-        long count = watchlist.getWatchlistEntries().stream()
-                .filter(entry -> entry.getMovie().equals(movie))
-                .count();
-
-        assertEquals(1, count, "No debería permitirse añadir la misma película dos veces");
+        assertEquals("La película ya está en la watchlist.", exception.getMessage());
     }
 
     @Test

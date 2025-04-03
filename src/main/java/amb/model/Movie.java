@@ -2,6 +2,9 @@ package amb.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +12,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.DoubleStream;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,8 +25,11 @@ public class Movie {
     private String id;
 
     @Column(nullable = false)
+    @NotNull
     private String title;
 
+    @Min(1900)
+    @Max(2025)
     private int year;
 
     public enum Genre {
