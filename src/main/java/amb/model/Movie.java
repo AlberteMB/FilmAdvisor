@@ -1,81 +1,104 @@
 package amb.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
+import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.DoubleStream;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
-@Entity
+@DynamoDbBean
 public class Movie {
-    @Id
-    @GeneratedValue(generator = "UUID")
-    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
-    private String id;
 
-    @Column(nullable = false)
-    @NotNull
+    private String pk; // Title#Genre
+    private String sk; // Platform
     private String title;
-
-    @Min(1900)
-    @Max(2025)
     private int year;
+    private String releasedDate;
+    private List<Genre> genres = new ArrayList<>();
+    private String director;
+    private Rating rating;
+    private List<String> actors = new ArrayList<>();
+    private String imdbId; // To generate the link to IMDb
+    private String synopsis;
+
+
+    @DynamoDbPartitionKey
+    public String getPk() {
+        return pk;
+    }
+
+    public void setPk(String pk) {
+        this.pk = pk;
+    }
+
+    @DynamoDbSortKey
+    public String getSk() {
+        return sk;
+    }
+
+    public void setSk(String sk) {
+        this.sk = sk;
+    }
+
+    @DynamoDbSecondarySortKey(indexNames = {"YearIndex", "ReleasedDateIndex"})
+    public String getTitle() {
+        return title;
+    }
+
+    @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
+    public int getYear() {
+        return year;
+    }
+
+    @DynamoDbSecondaryPartitionKey(indexNames = "ReleasedDateIndex")
+    public String getReleasedDate() {
+        return releasedDate;
+    }
+
+    @DynamoDbAttribute("Genres")
+    public List<Genre> getGenres() {
+        return genres;
+    }
+
+    @DynamoDbAttribute("Director")
+    public String getDirector() {
+        return director;
+    }
+
+    @DynamoDbAttribute("Rating")
+    public Rating getRating() {
+        return rating;
+    }
+
+    @DynamoDbAttribute("Actors")
+    public List<String> getActors() {
+        return actors;
+    }
+
+    @DynamoDbAttribute("ImdbId")
+    public String getImdbId() {
+        return imdbId;
+    }
+
+    @DynamoDbAttribute("Synopsis")
+    public String getSynopsis(){
+        return synopsis;
+    }
+
 
     public enum Genre {
         ACTION, ADVENTURE, SCI_FI, COMEDY, DRAMA, FANTASY, HORROR, ROMANCE,
-        THRILLER, CRIME, DOCUMENTARY, ANIMATION, FAMILY, HISTORICAL, WAR,
-        WESTERN, SPORTS, BIOPIC, MYSTERY, MUSICAL, SERIES, ANIME, LGBT;
+        THRILLER, ANIMATION, FAMILY, HISTORICAL, WAR,
+        WESTERN, SPORTS, BIOPIC, MYSTERY, MUSICAL, ANIME, LGBT
     }
-    public enum Rating{
+
+    public enum Rating {
         G, PG, PG_13, R
     }
-
-    @ElementCollection(targetClass = Genre.class)
-    @CollectionTable(name = "movie_genres", joinColumns = @JoinColumn(name = "movie_id"))
-    @Enumerated(EnumType.STRING) // Guarda el enum como String en la BD
-    @Column(name = "genre")
-    private List<Genre> genres = new ArrayList<>();
-
-    private String director;
-
-    @Enumerated(EnumType.STRING)
-    private Rating rating;
-
-    @ElementCollection
-    private List<String> actors = new ArrayList<>();;
-
-    @OneToMany(mappedBy = "movie", cascade = CascadeType.REFRESH)
-    private List<WatchedMovie> watchedMovies = new ArrayList<>();
-
-    //@OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
-    //private List<WatchlistEntry> watchlistEntries = new ArrayList<>();
-
-    @OneToMany(mappedBy = "movie", cascade = CascadeType.REFRESH)
-    private List<DiscardedMovie> discardedMovies = new ArrayList<>();
-
-    @Override
-    public String toString() {
-        return "Movie{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", year=" + year +
-                ", genres=" + genres +
-                ", director='" + director + '\'' +
-                ", rating=" + rating +
-                ", actors=" + actors +
-                '}';
-    }
-
-
 }
