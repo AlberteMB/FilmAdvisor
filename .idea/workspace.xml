@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Testing but still with issues.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/model/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Watchlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/model/Watchlist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/WatchlistEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/model/WatchlistEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Testing but still with issues." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
