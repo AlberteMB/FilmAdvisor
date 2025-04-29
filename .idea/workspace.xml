@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Refactoring. Deleting DiscardedMovie and WatchedMovie and merging both in UserMovieStatus. Deleting Watchlist.">
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adding new attribute to Movie. Deleting methods in repo because I want to make them by myself.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/FilmAdvisor-Tables.ods" beforeDir="false" afterPath="$PROJECT_DIR$/docs/FilmAdvisor-Tables.ods" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/MovieTable-DynamoDB.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/MovieTable-DynamoDB.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/amb/movie/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/movie/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/MovieRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745939654434</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Adding new attribute to Movie. Deleting methods in repo because I want to make them by myself.">
+      <option name="closed" value="true" />
+      <created>1745942333655</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1745942333655</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -309,6 +315,7 @@
     <MESSAGE value="Removing  code made by AI." />
     <MESSAGE value="Preparing methods to code later." />
     <MESSAGE value="Refactoring. Deleting DiscardedMovie and WatchedMovie and merging both in UserMovieStatus. Deleting Watchlist." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring. Deleting DiscardedMovie and WatchedMovie and merging both in UserMovieStatus. Deleting Watchlist." />
+    <MESSAGE value="Adding new attribute to Movie. Deleting methods in repo because I want to make them by myself." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding new attribute to Movie. Deleting methods in repo because I want to make them by myself." />
   </component>
 </project>

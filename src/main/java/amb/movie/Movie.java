@@ -5,8 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.*;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -14,57 +17,44 @@ import java.util.List;
 @DynamoDbBean
 public class Movie {
 
-    private String pk; // Title#Genre
-    private String sk; // Platform
+    private String platform;
+    private String movieId; // Title#Genre
     private String title;
-    private int year;
-    private String releasedDate;
-    private List<Genre> genres = new ArrayList<>();
     private String director;
-    private Rating rating;
+    private int year;
+    private LocalDate releasedDate;
+    private Set<Genre> genres = new HashSet<>(); // Use Set to avoid duplicates
     private List<String> actors = new ArrayList<>();
-    private String imdbId; // To generate the link to IMDb
     private String synopsis;
+    private String imdbId; // Use this to generate the link to IMDb
+    private double imdbRating;
     private String imageUrl;
 
-
     @DynamoDbPartitionKey
-    public String getPk() {
-        return pk;
-    }
-
-    public void setPk(String pk) {
-        this.pk = pk;
+    public String getPlatform() {
+        return platform;
     }
 
     @DynamoDbSortKey
-    public String getSk() {
-        return sk;
+    public String getMovieId() {
+        return movieId;
     }
 
-    public void setSk(String sk) {
-        this.sk = sk;
+    // GSI search by genre
+    @DynamoDbSecondaryPartitionKey(indexNames = "GenreIndex")
+    public Set<Genre> getGenres() {
+        return genres;
     }
 
+    // GSI search by year
     @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
     public int getYear() {
         return year;
     }
 
-    @DynamoDbSecondarySortKey(indexNames = {"YearIndex", "ReleasedDateIndex"})
+    @DynamoDbAttribute("Title")
     public String getTitle() {
         return title;
-    }
-
-
-    @DynamoDbSecondaryPartitionKey(indexNames = "ReleasedDateIndex")
-    public String getReleasedDate() {
-        return releasedDate;
-    }
-
-    @DynamoDbAttribute("Genres")
-    public List<Genre> getGenres() {
-        return genres;
     }
 
     @DynamoDbAttribute("Director")
@@ -72,14 +62,20 @@ public class Movie {
         return director;
     }
 
-    @DynamoDbAttribute("Rating")
-    public Rating getRating() {
-        return rating;
+    @DynamoDbAttribute("ReleasedDate")
+    public LocalDate getReleasedDate() {
+        return releasedDate;
     }
+
 
     @DynamoDbAttribute("Actors")
     public List<String> getActors() {
         return actors;
+    }
+
+    @DynamoDbAttribute("Synopsis")
+    public String getSynopsis(){
+        return synopsis;
     }
 
     @DynamoDbAttribute("ImdbId")
@@ -87,9 +83,9 @@ public class Movie {
         return imdbId;
     }
 
-    @DynamoDbAttribute("Synopsis")
-    public String getSynopsis(){
-        return synopsis;
+    @DynamoDbAttribute("ImdbRating")
+    public double getImdbRating() {
+        return imdbRating;
     }
 
     @DynamoDbAttribute("ImageUrl")
@@ -105,5 +101,9 @@ public class Movie {
 
     public enum Rating {
         G, PG, PG_13, R
+    }
+
+    public String generateMovieId() {
+        return this.title.toLowerCase().replace(" ", "-") + "#" + this.year;
     }
 }
