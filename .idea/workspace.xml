@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Removing WatchlistEntry. Adapting Movie, its repository and service.">
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Removing  code made by AI.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/repository/MovieRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" afterDir="false" />
@@ -234,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745859623103</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Removing  code made by AI.">
+      <option name="closed" value="true" />
+      <created>1745908132716</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745908132716</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -274,6 +282,7 @@
     <MESSAGE value="Relationship between User and Watchlist @OneToOne." />
     <MESSAGE value="Testing but still with issues." />
     <MESSAGE value="Removing WatchlistEntry. Adapting Movie, its repository and service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing WatchlistEntry. Adapting Movie, its repository and service." />
+    <MESSAGE value="Removing  code made by AI." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing  code made by AI." />
   </component>
 </project>

@@ -39,7 +39,7 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public Movie updateMovie(String pk, String sk, Movie movieDetails) {
-
+        return movieDetails;
     }
 
     @Override
@@ -55,23 +55,23 @@ public class MovieServiceImpl implements MovieService {
 
     @Override
     public List<Movie> findMoviesByGenreAndPlatforms(String genre, List<String> platforms) {
-
-        return result;
+        return List.of();
     }
 
     @Override
     public List<Movie> findRandomMoviesByGenreAndPlatforms(String genre, List<String> platforms, int limit) {
-
+        return List.of();
     }
 
     @Override
     public List<Movie> findMoviesByYear(int year) {
-        return movieRepository.findByYear(year);
+        return List.of();
     }
 
     @Override
     public List<Movie> findRecentlyAddedMovies(LocalDate sinceDate) {
-        return movieRepository.findByReleasedDateAfter(sinceDate);
+        return List.of();
     }
+
 }
 

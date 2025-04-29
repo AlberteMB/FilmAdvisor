@@ -30,16 +30,15 @@ public class MovieRepository {
 
     public Optional<Movie> findById(String pk, String sk) {
 
+        return Movie;
     }
 
     public List<Movie> findByYear(int year) {
-
 
         return results;
     }
 
     public List<Movie> findByReleasedDate(String releasedDate) {
-
 
         return results;
     }
@@ -61,9 +60,8 @@ public class MovieRepository {
     }
 
     public List<Movie> findByGenre(String genre) {
-
+        return results;
     }
-
 
     public List<Movie> findByReleasedDateAfter(LocalDate sinceDate) {
 
