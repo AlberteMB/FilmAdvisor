@@ -25,6 +25,7 @@ public class Movie {
     private List<String> actors = new ArrayList<>();
     private String imdbId; // To generate the link to IMDb
     private String synopsis;
+    private String imageUrl;
 
 
     @DynamoDbPartitionKey
@@ -45,15 +46,16 @@ public class Movie {
         this.sk = sk;
     }
 
+    @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
+    public int getYear() {
+        return year;
+    }
+
     @DynamoDbSecondarySortKey(indexNames = {"YearIndex", "ReleasedDateIndex"})
     public String getTitle() {
         return title;
     }
 
-    @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
-    public int getYear() {
-        return year;
-    }
 
     @DynamoDbSecondaryPartitionKey(indexNames = "ReleasedDateIndex")
     public String getReleasedDate() {
@@ -90,6 +92,10 @@ public class Movie {
         return synopsis;
     }
 
+    @DynamoDbAttribute("ImageUrl")
+    public String getImageUrl(){
+        return imageUrl;
+    }
 
     public enum Genre {
         ACTION, ADVENTURE, SCI_FI, COMEDY, DRAMA, FANTASY, HORROR, ROMANCE,

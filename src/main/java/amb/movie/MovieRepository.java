@@ -23,44 +23,6 @@ public class MovieRepository {
     }
 
 
-    public Optional<Movie> findById(String pk, String sk) {
 
-        return Movie;
-    }
-
-    public List<Movie> findByYear(int year) {
-
-        return results;
-    }
-
-    public List<Movie> findByReleasedDate(String releasedDate) {
-
-        return results;
-    }
-
-    public List<Movie> findAll() {
-        List<Movie> movies = new ArrayList<>();
-        movieTable.scan().items().forEach(movies::add);
-        return movies;
-    }
-
-    // Delete a movie
-    public void delete(String pk, String sk) {
-
-    }
-
-    // Count movies
-    public long count() {
-        return movieTable.scan().items().stream().count();
-    }
-
-    public List<Movie> findByGenre(String genre) {
-        return results;
-    }
-
-    public List<Movie> findByReleasedDateAfter(LocalDate sinceDate) {
-
-        return result;
-    }
 
 }

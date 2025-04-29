@@ -9,17 +9,13 @@ PK = year
 SK = title
 
 
-- Discarted table
+- UserMovieStatus
 PK = user
 SK = title#date
 
-- Watched Table
-PK = user
-SK = title#WatchedDate
 
-GSI1
-PK = rating
-SK = title
+
+
 
 
 
