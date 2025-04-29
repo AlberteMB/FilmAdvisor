@@ -1,5 +1,7 @@
-package amb.model;
+package amb.user;
 
+import amb.discarded.DiscardedMovie;
+import amb.watchted.WatchedMovie;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

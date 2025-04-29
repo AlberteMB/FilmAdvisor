@@ -1,8 +1,8 @@
 package amb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import amb.model.User;
-import amb.repository.UserRepository;
+import amb.user.User;
+import amb.user.UserRepository;
 
 import java.util.List;
 import java.util.Optional;

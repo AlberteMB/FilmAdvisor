@@ -4,10 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Removing  code made by AI.">
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Preparing methods to code later.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/DiscardedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/discarded/DiscardedMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/WatchedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/watchted/WatchedMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Watchlist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/DiscardedMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/discarded/DiscardedMovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/WatchedMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/watchted/WatchedMovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/WatchlistRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/MovieService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +118,12 @@
       <recent name="$PROJECT_DIR$/src/main/frontend/model" />
       <recent name="$PROJECT_DIR$/src/main/frontend/data" />
       <recent name="$PROJECT_DIR$/src/main/frontend/views" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="amb.discarded" />
+      <recent name="amb.watchted" />
+      <recent name="amb.user" />
+      <recent name="amb.movie" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.EntityRelationshipsTest.testCascadeDeleteWatchlist">
@@ -242,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745908132716</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Preparing methods to code later.">
+      <option name="closed" value="true" />
+      <created>1745909513826</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745909513826</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -283,6 +316,7 @@
     <MESSAGE value="Testing but still with issues." />
     <MESSAGE value="Removing WatchlistEntry. Adapting Movie, its repository and service." />
     <MESSAGE value="Removing  code made by AI." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing  code made by AI." />
+    <MESSAGE value="Preparing methods to code later." />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparing methods to code later." />
   </component>
 </project>

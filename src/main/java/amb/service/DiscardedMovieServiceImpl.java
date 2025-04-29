@@ -1,8 +1,8 @@
 package amb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import amb.model.DiscardedMovie;
-import amb.repository.DiscardedMovieRepository;
+import amb.discarded.DiscardedMovie;
+import amb.discarded.DiscardedMovieRepository;
 
 import java.util.List;
 import java.util.Optional;

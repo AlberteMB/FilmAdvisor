@@ -1,12 +1,12 @@
-package amb.model;
+package amb.watchted;
 
+import amb.movie.Movie;
+import amb.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
-
-import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor

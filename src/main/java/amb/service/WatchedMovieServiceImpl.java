@@ -1,8 +1,8 @@
 package amb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import amb.model.WatchedMovie;
-import amb.repository.WatchedMovieRepository;
+import amb.watchted.WatchedMovie;
+import amb.watchted.WatchedMovieRepository;
 
 import java.util.List;
 import java.util.Optional;

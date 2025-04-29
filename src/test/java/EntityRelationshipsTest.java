@@ -1,8 +1,6 @@
-import amb.model.Movie;
-import amb.model.User;
-import amb.model.Watchlist;
-import amb.repository.UserRepository;
-import amb.repository.WatchlistRepository;
+import amb.movie.Movie;
+import amb.user.User;
+import amb.user.UserRepository;
 import jakarta.validation.ConstraintViolation;
 import jakarta.validation.Validation;
 import jakarta.validation.Validator;

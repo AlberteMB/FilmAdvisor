@@ -1,15 +1,11 @@
 package amb.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import amb.model.Movie;
-import amb.repository.MovieRepository;
+import amb.movie.Movie;
+import amb.movie.MovieRepository;
 import org.springframework.stereotype.Service;
-import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 import java.time.LocalDate;
 
 @Service

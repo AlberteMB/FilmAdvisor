@@ -1,0 +1,26 @@
+Tables:
+
+- Movie Table:
+PK = title#genre
+SK = platform#ReleasedDate
+
+GSI1 (YearIndex):
+PK = year
+SK = title
+
+
+- Discarted table
+PK = user
+SK = title#date
+
+- Watched Table
+PK = user
+SK = title#WatchedDate
+
+GSI1
+PK = rating
+SK = title
+
+
+
+

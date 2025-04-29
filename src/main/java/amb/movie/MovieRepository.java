@@ -1,16 +1,11 @@
-package amb.repository;
+package amb.movie;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import amb.model.Movie;
 import software.amazon.awssdk.enhanced.dynamodb.*;
-import software.amazon.awssdk.enhanced.dynamodb.model.DeleteItemEnhancedRequest;
-import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 public class MovieRepository {
 

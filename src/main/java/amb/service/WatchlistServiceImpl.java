@@ -1,11 +1,9 @@
 package amb.service;
 
-import amb.model.Movie;
-import amb.model.User;
+import amb.movie.Movie;
+import amb.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import amb.model.Watchlist;
-import amb.repository.WatchlistRepository;
 
 import java.util.List;
 import java.util.Optional;

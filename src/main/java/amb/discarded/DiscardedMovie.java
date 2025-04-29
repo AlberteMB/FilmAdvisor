@@ -1,38 +1,37 @@
-package amb.model;
+package amb.discarded;
 
+import amb.movie.Movie;
+import amb.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.GenericGenerator;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-public class Watchlist {
+public class DiscardedMovie {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id", nullable = false, unique = true)
+    @ManyToOne
+    @JoinColumn(nullable = false)
     private User user;
+
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private Movie movie;
 
     @Override
     public String toString() {
-       return "Watchlist{" +
-               "id=" + id +
-               ", user=" + user +
-               '}';
-   }
-
-
-
+        return "DiscardedMovie{" +
+                "id='" + id + '\'' +
+                ", user=" + user +
+                ", movie=" + movie +
+                '}';
+    }
 }
