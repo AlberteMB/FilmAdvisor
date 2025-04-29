@@ -23,43 +23,23 @@ public class MovieRepository {
     }
 
     public void save(Movie movie) {
+
         movieTable.putItem(movie);
     }
 
 
     public Optional<Movie> findById(String pk, String sk) {
-        Key key = Key.builder()
-                .partitionValue(pk
-                .sortValue(sk)
-                .build();
-        Movie movie = movieTable.getItem(r -> r.key(key));
-        return Optional.ofNullable(movie);
+
     }
 
     public List<Movie> findByYear(int year) {
-        DynamoDbIndex<Movie> yearIndex = movieTable.index("YearIndex");
 
-        QueryConditional queryConditional = QueryConditional
-                .keyEqualTo(Key.builder().partitionValue(year).build());
-
-        List<Movie> results = new ArrayList<>();
-        yearIndex.query(queryConditional)
-                .items()
-                .forEach(results::add);
 
         return results;
     }
 
     public List<Movie> findByReleasedDate(String releasedDate) {
-        DynamoDbIndex<Movie> releasedDateIndex = movieTable.index("ReleasedDateIndex");
 
-        QueryConditional queryConditional = QueryConditional
-                .keyEqualTo(Key.builder().partitionValue(releasedDate).build());
-
-        List<Movie> results = new ArrayList<>();
-        releasedDateIndex.query(queryConditional)
-                .items()
-                .forEach(results::add);
 
         return results;
     }
@@ -72,11 +52,7 @@ public class MovieRepository {
 
     // Delete a movie
     public void delete(String pk, String sk) {
-        Key key = Key.builder()
-                .partitionValue(pk)
-                .sortValue(sk)
-                .build();
-        movieTable.deleteItem(DeleteItemEnhancedRequest.builder().key(key).build());
+
     }
 
     // Count movies
@@ -85,35 +61,13 @@ public class MovieRepository {
     }
 
     public List<Movie> findByGenre(String genre) {
-        // Construir la KeyCondition para buscar todas las películas que tengan "#GENRE"
-        String genreSuffix = "#" + genre.toUpperCase(); // ejemplo: "#ACTION"
 
-        // Hacemos un query usando una condición "begins_with"
-        QueryConditional queryConditional = QueryConditional.sortBeginsWith(b ->
-                b.partitionValue(genreSuffix)
-        );
-
-        return movieTable.query(r -> r.queryConditional(queryConditional))
-                .items()
-                .stream()
-                .collect(Collectors.toList());
     }
 
-    public List<Movie> findByReleasedDateAfter(LocalDate sinceDate) {
-        // Hay que usar el GSI de ReleasedDate
-        String sinceDateString = sinceDate.toString(); // "2025-04-28"
 
-        return movieTable.index("ReleasedDateIndex") // O el nombre real de tu GSI
-                .query(r -> r.queryConditional(
-                                QueryConditional.sortGreaterThanOrEqualTo(b ->
-                                        b.partitionValue("RELEASED_DATE")
-                                                .sortValue(sinceDateString)
-                                )
-                        )
-                )
-                .items()
-                .stream()
-                .collect(Collectors.toList());
+    public List<Movie> findByReleasedDateAfter(LocalDate sinceDate) {
+
+        return result;
     }
 
 }
