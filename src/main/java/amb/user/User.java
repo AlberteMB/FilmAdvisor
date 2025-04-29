@@ -1,7 +1,7 @@
 package amb.user;
 
 import amb.discarded.DiscardedMovie;
-import amb.watchted.WatchedMovie;
+import amb.userMovieStatus.UserMovieStatus;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -52,7 +52,7 @@ public class User {
     //private UserPreferences preferences;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<WatchedMovie> watchedMovies = new ArrayList<>();;
+    private List<UserMovieStatus> watchedMovies = new ArrayList<>();;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private Watchlist watchlist;

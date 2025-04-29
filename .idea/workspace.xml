@@ -5,28 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Preparing methods to code later.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/amb/movie/MovieEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amb/user/UserEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusEndpoint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/DiscardedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/discarded/DiscardedMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/WatchedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/watchted/WatchedMovie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/model/Watchlist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/DiscardedMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/discarded/DiscardedMovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/MovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/WatchedMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/watchted/WatchedMovieRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/repository/WatchlistRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/MovieService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/discarded/DiscardedMovie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/discarded/DiscardedMovieRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/DiscardedMovieServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/MovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/MovieServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchedMovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/service/WatchlistServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/watchted/WatchedMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/watchted/WatchedMovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,10 +113,10 @@
       <recent name="$PROJECT_DIR$/src/main/frontend/views" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="amb.discarded" />
       <recent name="amb.watchted" />
       <recent name="amb.user" />
       <recent name="amb.movie" />
+      <recent name="amb.discarded" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.EntityRelationshipsTest.testCascadeDeleteWatchlist">
@@ -178,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EntityRelationshipsTest.testUserValidation" />
+        <item itemvalue="JUnit.EntityRelationshipsTest.testDuplicateMovieInWatchlist" />
+        <item itemvalue="JUnit.EntityRelationshipsTest.testCascadeOperations" />
         <item itemvalue="JUnit.EntityRelationshipsTest.testCascadeDeleteWatchlist" />
         <item itemvalue="JUnit.EntityRelationshipsTest" />
-        <item itemvalue="JUnit.EntityRelationshipsTest.testDuplicateMovieInWatchlist" />
-        <item itemvalue="JUnit.EntityRelationshipsTest.testUserValidation" />
-        <item itemvalue="JUnit.EntityRelationshipsTest.testCascadeOperations" />
       </list>
     </recent_temporary>
   </component>

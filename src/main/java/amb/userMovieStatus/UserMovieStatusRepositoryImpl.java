@@ -1,35 +1,33 @@
-package amb.service;
+package amb.userMovieStatus;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import amb.watchted.WatchedMovie;
-import amb.watchted.WatchedMovieRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public class WatchedMovieServiceImpl implements WatchedMovieService {
+public class UserMovieStatusRepositoryImpl implements WatchedMovieService {
 
     @Autowired
-    private WatchedMovieRepository watchedMovieRepository;
+    private UserMovieStatusRepository watchedMovieRepository;
 
     @Override
-    public List<WatchedMovie> getAllWatchedMovies() {
+    public List<UserMovieStatus> getAllWatchedMovies() {
         return watchedMovieRepository.findAll();
     }
 
     @Override
-    public WatchedMovie createWatchedMovie(WatchedMovie watchedMovie) {
+    public UserMovieStatus createWatchedMovie(UserMovieStatus watchedMovie) {
         return watchedMovieRepository.save(watchedMovie);
     }
 
     @Override
-    public WatchedMovie getWatchedMovieById(String id) {
+    public UserMovieStatus getWatchedMovieById(String id) {
         return watchedMovieRepository.findById(id).orElse(null);
     }
 
     @Override
-    public WatchedMovie updateWatchedMovie(String id, WatchedMovie watchedMovieDetails) {
-        Optional<WatchedMovie> watchedMovie = watchedMovieRepository.findById(id);
+    public UserMovieStatus updateWatchedMovie(String id, UserMovieStatus watchedMovieDetails) {
+        Optional<UserMovieStatus> watchedMovie = watchedMovieRepository.findById(id);
         if(watchedMovie.isPresent()){
             watchedMovie.get().setUser(watchedMovieDetails.getUser());
             watchedMovie.get().setMovie(watchedMovieDetails.getMovie());
@@ -42,7 +40,7 @@ public class WatchedMovieServiceImpl implements WatchedMovieService {
     @Override
     public boolean deleteWatchedMovie(String id) {
         watchedMovieRepository.deleteById(id);
-        Optional<WatchedMovie> watchedMovie = watchedMovieRepository.findById(id);
+        Optional<UserMovieStatus> watchedMovie = watchedMovieRepository.findById(id);
         return watchedMovie.isPresent();
     }
 

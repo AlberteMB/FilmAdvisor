@@ -1,7 +1,5 @@
-package amb.service;
+package amb.movie;
 
-import amb.movie.Movie;
-import amb.movie.MovieRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
