@@ -7,20 +7,29 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class MovieRepository {
+public interface MovieRepository {
 
-    private final DynamoDbTable<Movie> movieTable;
-    private final DynamoDbEnhancedClient enhancedClient;
+    void save(Movie movie);
 
-    public MovieRepository(DynamoDbEnhancedClient enhancedClient) {
-        this.enhancedClient = enhancedClient;
-        this.movieTable = enhancedClient.table("Movies", TableSchema.fromBean(Movie.class));
-    }
+    List<Movie> findByPlatform(String platform);
 
-    public void save(Movie movie) {
+    List<Movie> findByPlatformAndGenre(String platform, Movie.Genre genre);
 
-        movieTable.putItem(movie);
-    }
+    //List<Movie> findByYear(int year);
+
+    List<Movie> findAll();
+
+    Long countMovies();
+
+    //Optional<Movie> findByMovieId(String movieId);
+
+    //Optional<Movie> findByTitle(String title);
+
+    //List<Movie> findByActor(String actor);
+
+    //List<Movie> findByDirector(String director);
+
+
 
 
 

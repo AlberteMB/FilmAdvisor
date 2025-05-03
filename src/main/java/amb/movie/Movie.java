@@ -17,8 +17,8 @@ import java.util.Set;
 @DynamoDbBean
 public class Movie {
 
-    private String platform;
-    private String movieId; // Title#Genre
+    private String platform; // Partition key
+    private String movieId; // Sort Key. Title#Genre
     private String title;
     private String director;
     private int year;
@@ -26,6 +26,7 @@ public class Movie {
     private Set<Genre> genres = new HashSet<>(); // Use Set to avoid duplicates
     private List<String> actors = new ArrayList<>();
     private String synopsis;
+    private Rating rating;
     private String imdbId; // Use this to generate the link to IMDb
     private double imdbRating;
     private String imageUrl;
@@ -76,6 +77,11 @@ public class Movie {
     @DynamoDbAttribute("Synopsis")
     public String getSynopsis(){
         return synopsis;
+    }
+
+    @DynamoDbAttribute("AgeRating")
+    public Rating getAgeRating() {
+        return rating;
     }
 
     @DynamoDbAttribute("ImdbId")
