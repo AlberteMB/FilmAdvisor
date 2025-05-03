@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adding Rating in Movie class.Adding methods findByPlatformAndGenre, findAll, countMovies, findByPlatform.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/amb/config/DynamoDBConfig.java" afterDir="false" />
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adding region. Basic config.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/movie/MovieEndpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/movie/MovieEndpoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +287,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746289243984</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Config not completed in application.properties. Creating class for config.">
+      <option name="closed" value="true" />
+      <created>1746290366746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746290366746</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Adding region. Basic config.">
+      <option name="closed" value="true" />
+      <created>1746291298280</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746291298280</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -334,6 +349,8 @@
     <MESSAGE value="Adding new attribute to Movie. Deleting methods in repo because I want to make them by myself." />
     <MESSAGE value="Movie PK=Platform SK=title#genre. GSI1=Genre.GSI2=Year." />
     <MESSAGE value="Adding Rating in Movie class.Adding methods findByPlatformAndGenre, findAll, countMovies, findByPlatform." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Rating in Movie class.Adding methods findByPlatformAndGenre, findAll, countMovies, findByPlatform." />
+    <MESSAGE value="Config not completed in application.properties. Creating class for config." />
+    <MESSAGE value="Adding region. Basic config." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding region. Basic config." />
   </component>
 </project>
