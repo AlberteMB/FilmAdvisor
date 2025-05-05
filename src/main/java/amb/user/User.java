@@ -1,6 +1,5 @@
 package amb.user;
 
-import amb.discarded.DiscardedMovie;
 import amb.userMovieStatus.UserMovieStatus;
 import jakarta.persistence.*;
 
@@ -51,14 +50,14 @@ public class User {
     //@OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     //private UserPreferences preferences;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<UserMovieStatus> watchedMovies = new ArrayList<>();;
-
-    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Watchlist watchlist;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<DiscardedMovie> discardedMovies = new ArrayList<>();;
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+//    private List<UserMovieStatus> watchedMovies = new ArrayList<>();;
+//
+//    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+//    private Watchlist watchlist;
+//
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+//    private List<DiscardedMovie> discardedMovies = new ArrayList<>();;
 
 
     @Override

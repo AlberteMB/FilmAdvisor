@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adding endpoint in DynamoDBConfig.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ConnectionToDynamoDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Adding workspace.xml to gitignore. New test for connection with dynamoDB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/userMovieStatus/UserMovieStatusRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EntityRelationshipsTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +75,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Application.executor": "Run",
+    "JUnit.ConnectionToDynamoDBTest.executor": "Run",
     "JUnit.EntityRelationshipsTest.executor": "Run",
     "JUnit.EntityRelationshipsTest.testCascadeDeleteWatchlist.executor": "Run",
     "JUnit.EntityRelationshipsTest.testCascadeOperations.executor": "Run",
@@ -107,11 +111,11 @@
       <recent name="amb.discarded" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EntityRelationshipsTest.testCascadeDeleteWatchlist">
-    <configuration name="EntityRelationshipsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ConnectionToDynamoDBTest">
+    <configuration name="ConnectionToDynamoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FilmAdvisor" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EntityRelationshipsTest" />
+      <option name="MAIN_CLASS_NAME" value="ConnectionToDynamoDBTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ConnectionToDynamoDBTest" />
         <item itemvalue="JUnit.EntityRelationshipsTest.testUserValidation" />
         <item itemvalue="JUnit.EntityRelationshipsTest.testDuplicateMovieInWatchlist" />
         <item itemvalue="JUnit.EntityRelationshipsTest.testCascadeOperations" />
         <item itemvalue="JUnit.EntityRelationshipsTest.testCascadeDeleteWatchlist" />
-        <item itemvalue="JUnit.EntityRelationshipsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746465595159</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Adding workspace.xml to gitignore. New test for connection with dynamoDB">
+      <option name="closed" value="true" />
+      <created>1746466662551</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1746466662551</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -379,6 +391,7 @@
     <MESSAGE value="Movie endpoint basic structure." />
     <MESSAGE value="Changing export for @Value." />
     <MESSAGE value="Adding endpoint in DynamoDBConfig." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding endpoint in DynamoDBConfig." />
+    <MESSAGE value="Adding workspace.xml to gitignore. New test for connection with dynamoDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding workspace.xml to gitignore. New test for connection with dynamoDB" />
   </component>
 </project>

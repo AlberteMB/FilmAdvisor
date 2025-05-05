@@ -1,51 +1,20 @@
 package amb.userMovieStatus;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.repository.query.FluentQuery;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Function;
 
-public class UserMovieStatusRepositoryImpl implements WatchedMovieService {
+public class UserMovieStatusRepositoryImpl implements UserMovieStatusRepository {
 
-    @Autowired
-    private UserMovieStatusRepository watchedMovieRepository;
 
-    @Override
-    public List<UserMovieStatus> getAllWatchedMovies() {
-        return watchedMovieRepository.findAll();
-    }
 
-    @Override
-    public UserMovieStatus createWatchedMovie(UserMovieStatus watchedMovie) {
-        return watchedMovieRepository.save(watchedMovie);
-    }
-
-    @Override
-    public UserMovieStatus getWatchedMovieById(String id) {
-        return watchedMovieRepository.findById(id).orElse(null);
-    }
-
-    @Override
-    public UserMovieStatus updateWatchedMovie(String id, UserMovieStatus watchedMovieDetails) {
-        Optional<UserMovieStatus> watchedMovie = watchedMovieRepository.findById(id);
-        if(watchedMovie.isPresent()){
-            watchedMovie.get().setUser(watchedMovieDetails.getUser());
-            watchedMovie.get().setMovie(watchedMovieDetails.getMovie());
-            watchedMovie.get().setLiked(watchedMovieDetails.isLiked());
-            return watchedMovieRepository.save(watchedMovie.get());
-        }
-        return null;
-    }
-
-    @Override
-    public boolean deleteWatchedMovie(String id) {
-        watchedMovieRepository.deleteById(id);
-        Optional<UserMovieStatus> watchedMovie = watchedMovieRepository.findById(id);
-        return watchedMovie.isPresent();
-    }
-
-    @Override
-    public long countWatchedMovie() {
-        return watchedMovieRepository.count();
-    }
 }
+
+
