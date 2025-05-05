@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Movie endpoint basic structure.">
+    <list default="true" id="e2cb9f21-cb1d-41c9-b419-8b804fca4b2e" name="Changes" comment="Changing export for @Value.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/amb/config/DynamoDBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/amb/config/DynamoDBConfig.java" afterDir="false" />
     </list>
@@ -311,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746291445628</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Changing export for @Value.">
+      <option name="closed" value="true" />
+      <created>1746463347890</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1746463347890</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -360,6 +368,7 @@
     <MESSAGE value="Config not completed in application.properties. Creating class for config." />
     <MESSAGE value="Adding region. Basic config." />
     <MESSAGE value="Movie endpoint basic structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Movie endpoint basic structure." />
+    <MESSAGE value="Changing export for @Value." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing export for @Value." />
   </component>
 </project>
