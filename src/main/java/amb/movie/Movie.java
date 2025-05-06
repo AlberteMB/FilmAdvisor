@@ -30,6 +30,7 @@ public class Movie {
     private String imdbId; // Use this to generate the link to IMDb
     private double imdbRating;
     private String imageUrl;
+    private List<String> platforms = new ArrayList<>();
 
     @DynamoDbPartitionKey
     public String getPlatform() {
@@ -97,6 +98,11 @@ public class Movie {
     @DynamoDbAttribute("ImageUrl")
     public String getImageUrl(){
         return imageUrl;
+    }
+
+    @DynamoDbAttribute("Platforms")
+    public List<String> getPlatforms() {
+        return platforms;
     }
 
     public enum Genre {
