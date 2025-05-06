@@ -1,8 +1,5 @@
 package amb.movie;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.*;
 
 import java.time.LocalDate;
@@ -11,9 +8,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 @DynamoDbBean
 public class Movie {
 
@@ -37,79 +31,72 @@ public class Movie {
     public String getPlatform() {
         return platform;
     }
+    void setPlatform(String platform) {        this.platform = platform;   }
 
     @DynamoDbSortKey
     public String getMovieId() {
         return movieId;
     }
+    public void setMovieId(String movieId) { this.movieId = movieId; }
 
     // GSI search by genre
     @DynamoDbSecondaryPartitionKey(indexNames = "GenreIndex")
     public Set<Genre> getGenres() {
         return genres;
     }
+    public void setGenres(Set<Genre> genres) { this.genres = genres; }
 
     // GSI search by year
     @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
     public int getYear() {
         return year;
     }
+    public void setYear(int year) { this.year = year; }
 
     @DynamoDbAttribute("Duration")
-    public int getDuration() {
-        return duration;
-    }
+    public int getDuration() {        return duration; }
+    public void setDuration(int duration) { this.duration = duration; }
 
     @DynamoDbAttribute("Title")
-    public String getTitle() {
-        return title;
-    }
+    public String getTitle() {        return title; }
+    public void setTitle(String title) { this.title = title; }
 
     @DynamoDbAttribute("Director")
-    public String getDirector() {
-        return director;
-    }
+    public String getDirector() {return director;}
+    public void setDirector(String director) { this.director = director; }
 
     @DynamoDbAttribute("ReleasedDate")
-    public LocalDate getReleasedDate() {
-        return releasedDate;
-    }
+    public LocalDate getReleasedDate() {return releasedDate; }
+    public void setReleasedDate(LocalDate releasedDate) { this.releasedDate = releasedDate; }
 
 
     @DynamoDbAttribute("Actors")
-    public List<String> getActors() {
-        return actors;
-    }
+    public List<String> getActors() {return actors; }
+    public void setActors(List<String> actors) { this.actors = actors; }
 
     @DynamoDbAttribute("Synopsis")
-    public String getSynopsis(){
-        return synopsis;
-    }
+    public String getSynopsis(){return synopsis; }
+    public void setSynopsis(String synopsis) { this.synopsis = synopsis; }
 
     @DynamoDbAttribute("AgeRating")
-    public Rating getAgeRating() {
-        return rating;
-    }
+    public Rating getAgeRating() {return rating; }
+    public void setRating(Rating rating) { this.rating = rating; }
 
     @DynamoDbAttribute("ImdbId")
-    public String getImdbId() {
-        return imdbId;
-    }
+    public String getImdbId() {return imdbId; }
+    public void setImdbId(String imdbId) { this.imdbId = imdbId; }
 
     @DynamoDbAttribute("ImdbRating")
-    public double getImdbRating() {
-        return imdbRating;
-    }
+    public double getImdbRating() {return imdbRating; }
+    public void setImdbRating(double imdbRating) { this.imdbRating = imdbRating; }
 
     @DynamoDbAttribute("ImageUrl")
-    public String getImageUrl(){
-        return imageUrl;
-    }
+    public String getImageUrl(){return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 
     @DynamoDbAttribute("Platforms")
-    public List<String> getPlatforms() {
-        return platforms;
-    }
+    public List<String> getPlatforms() {return platforms; }
+    public void setPlatforms(List<String> platforms) { this.platforms = platforms; }
 
     public enum Genre {
         ACTION, ADVENTURE, SCI_FI, COMEDY, DRAMA, FANTASY, HORROR, ROMANCE,
