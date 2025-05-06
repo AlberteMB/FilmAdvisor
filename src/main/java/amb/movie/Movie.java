@@ -22,6 +22,7 @@ public class Movie {
     private String title;
     private String director;
     private int year;
+    private int duration;
     private LocalDate releasedDate;
     private Set<Genre> genres = new HashSet<>(); // Use Set to avoid duplicates
     private List<String> actors = new ArrayList<>();
@@ -52,6 +53,11 @@ public class Movie {
     @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
     public int getYear() {
         return year;
+    }
+
+    @DynamoDbAttribute("Duration")
+    public int getDuration() {
+        return duration;
     }
 
     @DynamoDbAttribute("Title")
