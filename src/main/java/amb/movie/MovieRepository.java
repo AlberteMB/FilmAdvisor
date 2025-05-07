@@ -15,11 +15,15 @@ public interface MovieRepository {
 
     List<Movie> findByPlatformAndGenre(String platform, Movie.Genre genre);
 
+    List<Movie> findByGenre(Movie.Genre genre);
+
     //List<Movie> findByYear(int year);
 
     List<Movie> findAll();
 
     Long countMovies();
+
+    DynamoDbEnhancedClient getEnhancedClient();
 
     //Optional<Movie> findByMovieId(String movieId);
 

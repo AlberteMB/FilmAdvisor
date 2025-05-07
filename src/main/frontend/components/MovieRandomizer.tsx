@@ -3,10 +3,23 @@ import { Grid, Container } from "@mui/material";
 import moviesData from "../data/movies.json";
 import MovieCard from "../components/MovieCard";
 import { Movie } from "../model/Movie";
+import { MovieEndpoint } from 'Frontend/generated/endpoints';
 
 const movies: Movie[] = moviesData;
 
 const MoviesRandomizer = () => {
+
+const handleSubmit = async () => {
+    if (selectedPlatforms.length === 0) {
+        alert("Selecciona al menos  una plataforma.");
+        return;
+      }
+
+    const movies = await MovieEndpoint.getFilteredRandomMovies(
+        selectedGenre.toUpperCase(), // asegúrate que coincide con Movie.Genre enum
+        selectedPlatforms
+      );
+
   // State for selectedMovies
   const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
   // State for numMovies

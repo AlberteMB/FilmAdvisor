@@ -3,10 +3,7 @@ package amb.movie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import software.amazon.awssdk.core.pagination.sync.SdkIterable;
-import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
-import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
-import software.amazon.awssdk.enhanced.dynamodb.Key;
-import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
+import software.amazon.awssdk.enhanced.dynamodb.*;
 import software.amazon.awssdk.enhanced.dynamodb.model.Page;
 import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
 
@@ -76,6 +73,30 @@ public class MovieRepositoryImpl implements MovieRepository  {
             }
         }
         return results;
+    }
+
+    @Override
+    public List<Movie> findByGenre(Movie.Genre genre) {
+        DynamoDbEnhancedClient enhancedClient = getEnhancedClient();
+        DynamoDbTable<Movie> table = enhancedClient.table("Movie", TableSchema.fromBean(Movie.class));
+
+        DynamoDbIndex<Movie> genreIndex = table.index("GenreIndex");
+
+        QueryConditional queryConditional = QueryConditional
+                .keyEqualTo(Key.builder().partitionValue(genre.name()).build());
+
+        List<Movie> results = new ArrayList<>();
+        SdkIterable<Page<Movie>> pages = genreIndex.query(r -> r.queryConditional(queryConditional));
+
+        for (Page<Movie> page : pages) {
+            results.addAll(page.items());
+        }
+        return results;
+    }
+
+    @Override
+    public DynamoDbEnhancedClient getEnhancedClient() {
+        return enhancedClient;
     }
 
     @Override
