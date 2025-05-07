@@ -53,23 +53,48 @@ const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolea
     </div>
   );
 };
-
 export { GenrePanel };
 
-const PlatformPanel = ({ title, children, isOpen, onToggle }:
-    PanelProps): JSX.Element => {
 
-  return (
-    <div className="border rounded-md p-2 mb-2">
-      <button
-        className="w-full text-left font-semibold"
-        onClick={onToggle}
-      >
-        {title}
-      </button>
-      {isOpen && <div className="mt-2">{children}</div>}
-    </div>
-  );
+const PlatformPanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolean; onToggle: () => void }) => {
+    const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
+
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const { value, checked } = event.target;
+        setSelectedPlatforms((prev) =>
+            checked
+                ? [...prev, value]
+                : prev.filter((platform) => platform !== value)
+        );
+    };
+
+    // Opciones hardcodeadas
+    const platformOptions = ["Netflix", "Prime"];
+
+    return (
+        <div>
+            <button className="w-full text-left font-semibold" onClick={onToggle}>
+                {title}
+            </button>
+            {isOpen && (
+                <div className="mt-2 flex flex-col space-y-1">
+                    {platformOptions.map((platform) => (
+                        <FormControlLabel
+                            key={platform}
+                            control={
+                                <Checkbox
+                                    checked={selectedPlatforms.includes(platform)}
+                                    onChange={handleChange}
+                                    value={platform}
+                                />
+                            }
+                            label={platform}
+                        />
+                    ))}
+                </div>
+            )}
+        </div>
+    );
 };
 
 export { PlatformPanel };
