@@ -23,13 +23,10 @@ const YearPanel = ({ title, children, isOpen, onToggle }:
 export { YearPanel };
 
 const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolean; onToggle: () => void }) => {
-  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const [selectedGenre, setSelectedGenre] = useState<string>('');
 
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { value, checked } = event.target;
-    setSelectedGenres((prev) =>
-      checked ? [...prev, value] : prev.filter((genre) => genre !== value)
-    );
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedGenre(event.target.value);
   };
 
   return (
@@ -38,20 +35,19 @@ const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolea
         {title}
       </button>
       {isOpen && (
-        <div className="mt-2 flex flex-col space-y-1">
-          {genres.map((genre) => (
-            <FormControlLabel
-              key={genre}
-              control={
-                <Checkbox
-                  checked={selectedGenres.includes(genre)}
-                  onChange={handleChange}
-                  value={genre}
-                />
-              }
-              label={genre}
-            />
-          ))}
+        <div className="mt-2">
+          <select
+            value={selectedGenre}
+            onChange={handleChange}
+            className="w-full p-2 border rounded"
+          >
+            <option value="">Selecciona un género</option>
+            {genres.map((genre) => (
+              <option key={genre} value={genre}>
+                {genre}
+              </option>
+            ))}
+          </select>
         </div>
       )}
     </div>
