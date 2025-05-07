@@ -24,22 +24,22 @@ public class User {
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
-    @Column(nullable = false, unique = true)
-    @NotBlank(message = "Username is required")
+//    @Column(nullable = false, unique = true)
+//    @NotBlank(message = "Username is required")
     private String username;
 
-    @NotBlank(message = "Email is required")
-    @Column(nullable = false, unique = true)
+//    @NotBlank(message = "Email is required")
+//    @Column(nullable = false, unique = true)
     private String email;
 
-    @Column(nullable = false)
-    @Size(min = 8, max = 16, message = "Password must be between 8 and 16 characters")
-    @Pattern(
-            regexp = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$",
-            message = "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character")
+//    @Column(nullable = false)
+//    @Size(min = 8, max = 16, message = "Password must be between 8 and 16 characters")
+//    @Pattern(
+//            regexp = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$",
+//            message = "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character")
     private String password;
 
-    @Enumerated(EnumType.STRING)
+//    @Enumerated(EnumType.STRING)
     private Role role;
 
     public enum Role {

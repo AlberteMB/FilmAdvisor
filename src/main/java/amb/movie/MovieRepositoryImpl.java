@@ -1,7 +1,7 @@
 package amb.movie;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 import software.amazon.awssdk.core.pagination.sync.SdkIterable;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbEnhancedClient;
 import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
@@ -15,17 +15,21 @@ import java.util.List;
 import java.util.Optional;
 import java.time.LocalDate;
 
-@Service
+@Repository
 public class MovieRepositoryImpl implements MovieRepository  {
 
     private final DynamoDbEnhancedClient enhancedClient;
-    private final DynamoDbTable<Movie> movieTable;
-    private final String tableName = "Movies";
+    //private final DynamoDbTable<Movie> movieTable;
+    private final String tableName = "Movie";
 
     @Autowired
     public MovieRepositoryImpl(DynamoDbEnhancedClient enhancedClient) {
         this.enhancedClient = enhancedClient;
-        this.movieTable = enhancedClient.table(tableName, TableSchema.fromBean(Movie.class));
+        //this.movieTable = enhancedClient.table(tableName, TableSchema.fromBean(Movie.class));
+    }
+
+    private DynamoDbTable<Movie> getTable() {
+        return enhancedClient.table(tableName, TableSchema.fromBean(Movie.class));
     }
 
      @Override
@@ -36,13 +40,14 @@ public class MovieRepositoryImpl implements MovieRepository  {
 
     @Override
     public List<Movie> findByPlatform(String platform) {
+        DynamoDbTable<Movie> table = getTable();
         Key key = Key.builder().partitionValue(platform).build();
 
         QueryConditional queryConditional = QueryConditional.keyEqualTo(key);
 
         List<Movie> results = new ArrayList<>();
 
-        SdkIterable<Page<Movie>> pages = movieTable.query(r -> r.queryConditional(queryConditional));
+        SdkIterable<Page<Movie>> pages = table.query(r -> r.queryConditional(queryConditional));
 
         for (Page<Movie> page : pages) {
             for (Movie movie : page.items()) {
@@ -54,13 +59,14 @@ public class MovieRepositoryImpl implements MovieRepository  {
 
     @Override
     public List<Movie> findByPlatformAndGenre(String platform, Movie.Genre genre) {
+        DynamoDbTable<Movie> table = getTable();
         Key key = Key.builder().partitionValue(platform).build();
 
         QueryConditional queryConditional = QueryConditional.keyEqualTo(key);
 
         List<Movie> results = new ArrayList<>();
 
-        SdkIterable<Page<Movie>> pages = movieTable.query(r -> r.queryConditional(queryConditional));
+        SdkIterable<Page<Movie>> pages = table.query(r -> r.queryConditional(queryConditional));
 
         for (Page<Movie> page : pages) {
             for (Movie movie : page.items()) {
@@ -74,9 +80,10 @@ public class MovieRepositoryImpl implements MovieRepository  {
 
     @Override
     public List<Movie> findAll() {
+        DynamoDbTable<Movie> table = getTable();
         List<Movie> results = new ArrayList<>();
 
-        SdkIterable<Page<Movie>> pages = movieTable.scan();
+        SdkIterable<Page<Movie>> pages = table.scan();
 
         for (Page<Movie> page : pages) {
             results.addAll(page.items());
@@ -87,7 +94,8 @@ public class MovieRepositoryImpl implements MovieRepository  {
 
     @Override
     public Long countMovies() {
-        return movieTable.scan()
+        DynamoDbTable<Movie> table = getTable();
+        return table.scan()
                 .stream()
                 .mapToLong(page -> page.items().size())
                 .sum();

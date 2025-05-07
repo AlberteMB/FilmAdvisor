@@ -31,7 +31,7 @@ public class Movie {
     public String getPlatform() {
         return platform;
     }
-    void setPlatform(String platform) {        this.platform = platform;   }
+    public void setPlatform(String platform) {        this.platform = platform;   }
 
     @DynamoDbSortKey
     public String getMovieId() {
