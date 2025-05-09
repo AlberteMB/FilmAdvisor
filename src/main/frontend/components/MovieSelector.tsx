@@ -7,29 +7,23 @@ import { MovieEndpoint } from 'Frontend/generated/endpoints';
 
 const movies: Movie[] = moviesData;
 
-const MoviesRandomizer = () => {
+const MoviesSelector = () => {
+    const { selectedGenres, selectedPlatforms } = useFilterContext();
+    const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
+    const [numMovies, setNumMovies] = useState<number>(3);
 
-const handleSubmit = async () => {
-    if (selectedPlatforms.length === 0) {
-        alert("Selecciona al menos  una plataforma.");
-        return;
-      }
+    const handleSubmit = async () => {
+        if (selectedPlatforms.length === 0) {
+            alert("Selecciona al menos  una plataforma.");
+            return;
+          }
 
-    const movies = await MovieEndpoint.getFilteredRandomMovies(
-        selectedGenre.toUpperCase(), // asegúrate que coincide con Movie.Genre enum
-        selectedPlatforms
-      );
-
-  // State for selectedMovies
-  const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
-  // State for numMovies
-  const [numMovies, setNumMovies] = useState<number>(3);
-
-  // Get function to get random movies
-  const getRandomMovies = (count: number) => {
-    const shuffled = [...moviesData].sort(() => Math.random() - 0.5); // Mix array
-    setSelectedMovies(shuffled.slice(0, count)); // Take the first "count" movies
-  };
+        const movies = await MovieEndpoint.getFilteredRandomMovies(
+            selectedGenre.toUpperCase(),
+            selectedPlatforms
+        );
+        setSelectedMovies(movies);
+    );
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
@@ -48,12 +42,9 @@ const handleSubmit = async () => {
       </label>
 
       {/* Button to get random movies */}
-      <button
-        onClick={() => getRandomMovies(numMovies)}
-        style={{ padding: "10px", cursor: "pointer" }}
-      >
-        Obtener películas
-      </button>
+      <<button onClick={handleSubmit} style={{ padding: "10px" }}>
+               Obtener películas
+             </button>
 
       {/* Container with movies */}
       <Container maxWidth="md" style={{ marginTop: "20px" }}>
@@ -69,5 +60,5 @@ const handleSubmit = async () => {
   );
 };
 
-export default MoviesRandomizer;
+export default MoviesSelector;
 
