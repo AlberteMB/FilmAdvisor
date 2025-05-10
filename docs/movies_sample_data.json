@@ -1,0 +1,2751 @@
+[
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 1#Mystery",
+    "title": "Movie Title 1",
+    "director": "Christopher Nolan",
+    "year": 2017,
+    "duration": 94,
+    "releasedDate": "2017-04-03",
+    "genres": [
+      "Mystery"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "R",
+    "imdbId": "tt4006620",
+    "imdbRating": 7.2,
+    "imageUrl": "https://example.com/images/movie1.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 2#Adventure",
+    "title": "Movie Title 2",
+    "director": "Quentin Tarantino",
+    "year": 2017,
+    "duration": 134,
+    "releasedDate": "2017-06-21",
+    "genres": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Denzel Washington",
+      "Leonardo DiCaprio",
+      "Florence Pugh",
+      "Christian Bale"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG",
+    "imdbId": "tt6998757",
+    "imdbRating": 7.7,
+    "imageUrl": "https://example.com/images/movie2.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 3#Sci-Fi",
+    "title": "Movie Title 3",
+    "director": "Martin Scorsese",
+    "year": 2003,
+    "duration": 117,
+    "releasedDate": "2003-08-01",
+    "genres": [
+      "Sci-Fi",
+      "Comedy",
+      "Fantasy"
+    ],
+    "actors": [
+      "Zendaya",
+      "Tom Hardy",
+      "Ryan Gosling",
+      "Scarlett Johansson"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG-13",
+    "imdbId": "tt2875664",
+    "imdbRating": 7.0,
+    "imageUrl": "https://example.com/images/movie3.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 4#Mystery",
+    "title": "Movie Title 4",
+    "director": "Greta Gerwig",
+    "year": 1995,
+    "duration": 167,
+    "releasedDate": "1995-02-09",
+    "genres": [
+      "Mystery",
+      "Romance"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Brad Pitt",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "G",
+    "imdbId": "tt9495401",
+    "imdbRating": 5.5,
+    "imageUrl": "https://example.com/images/movie4.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 5#Thriller",
+    "title": "Movie Title 5",
+    "director": "Christopher Nolan",
+    "year": 1998,
+    "duration": 156,
+    "releasedDate": "1998-02-13",
+    "genres": [
+      "Thriller",
+      "Fantasy",
+      "Mystery"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Zendaya",
+      "Florence Pugh",
+      "Ryan Gosling",
+      "Brad Pitt"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "PG-13",
+    "imdbId": "tt5493372",
+    "imdbRating": 5.7,
+    "imageUrl": "https://example.com/images/movie5.jpg",
+    "platforms": [
+      "Netflix",
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 6#Sci-Fi",
+    "title": "Movie Title 6",
+    "director": "Patty Jenkins",
+    "year": 1990,
+    "duration": 160,
+    "releasedDate": "1990-05-28",
+    "genres": [
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Emma Stone",
+      "Christian Bale"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "R",
+    "imdbId": "tt9757789",
+    "imdbRating": 6.8,
+    "imageUrl": "https://example.com/images/movie6.jpg",
+    "platforms": [
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 7#Horror",
+    "title": "Movie Title 7",
+    "director": "Denis Villeneuve",
+    "year": 2022,
+    "duration": 94,
+    "releasedDate": "2022-01-20",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "actors": [
+      "Zendaya",
+      "Scarlett Johansson"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "NC-17",
+    "imdbId": "tt2563815",
+    "imdbRating": 8.7,
+    "imageUrl": "https://example.com/images/movie7.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 8#Thriller",
+    "title": "Movie Title 8",
+    "director": "Christopher Nolan",
+    "year": 2012,
+    "duration": 163,
+    "releasedDate": "2012-01-01",
+    "genres": [
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Scarlett Johansson",
+      "Ryan Gosling",
+      "Christian Bale"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "G",
+    "imdbId": "tt8766786",
+    "imdbRating": 5.3,
+    "imageUrl": "https://example.com/images/movie8.jpg",
+    "platforms": [
+      "Netflix",
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 9#Comedy",
+    "title": "Movie Title 9",
+    "director": "Greta Gerwig",
+    "year": 1998,
+    "duration": 116,
+    "releasedDate": "1998-03-19",
+    "genres": [
+      "Comedy"
+    ],
+    "actors": [
+      "Zendaya",
+      "Ryan Gosling",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG-13",
+    "imdbId": "tt1409804",
+    "imdbRating": 8.7,
+    "imageUrl": "https://example.com/images/movie9.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 10#Fantasy",
+    "title": "Movie Title 10",
+    "director": "Quentin Tarantino",
+    "year": 2020,
+    "duration": 92,
+    "releasedDate": "2020-04-07",
+    "genres": [
+      "Fantasy",
+      "Horror",
+      "Comedy"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Zendaya",
+      "Christian Bale",
+      "Tom Hardy"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt4207541",
+    "imdbRating": 7.2,
+    "imageUrl": "https://example.com/images/movie10.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 11#Drama",
+    "title": "Movie Title 11",
+    "director": "Quentin Tarantino",
+    "year": 1992,
+    "duration": 81,
+    "releasedDate": "1992-09-21",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Zendaya"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "R",
+    "imdbId": "tt1968318",
+    "imdbRating": 7.4,
+    "imageUrl": "https://example.com/images/movie11.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 12#Mystery",
+    "title": "Movie Title 12",
+    "director": "Martin Scorsese",
+    "year": 2023,
+    "duration": 144,
+    "releasedDate": "2023-03-09",
+    "genres": [
+      "Mystery",
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Scarlett Johansson",
+      "Timoth\u00e9e Chalamet",
+      "Denzel Washington",
+      "Ryan Gosling"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG",
+    "imdbId": "tt9692043",
+    "imdbRating": 5.4,
+    "imageUrl": "https://example.com/images/movie12.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 13#Fantasy",
+    "title": "Movie Title 13",
+    "director": "Christopher Nolan",
+    "year": 1993,
+    "duration": 122,
+    "releasedDate": "1993-08-26",
+    "genres": [
+      "Fantasy"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Denzel Washington",
+      "Brad Pitt",
+      "Emma Stone"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "R",
+    "imdbId": "tt7965247",
+    "imdbRating": 7.1,
+    "imageUrl": "https://example.com/images/movie13.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 14#Drama",
+    "title": "Movie Title 14",
+    "director": "Patty Jenkins",
+    "year": 2021,
+    "duration": 111,
+    "releasedDate": "2021-06-11",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Fantasy"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Denzel Washington",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "NC-17",
+    "imdbId": "tt4062735",
+    "imdbRating": 5.4,
+    "imageUrl": "https://example.com/images/movie14.jpg",
+    "platforms": [
+      "Netflix",
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 15#Thriller",
+    "title": "Movie Title 15",
+    "director": "Patty Jenkins",
+    "year": 2024,
+    "duration": 142,
+    "releasedDate": "2024-09-11",
+    "genres": [
+      "Thriller"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Ryan Gosling"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG-13",
+    "imdbId": "tt3230946",
+    "imdbRating": 9.2,
+    "imageUrl": "https://example.com/images/movie15.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 16#Horror",
+    "title": "Movie Title 16",
+    "director": "Martin Scorsese",
+    "year": 2002,
+    "duration": 100,
+    "releasedDate": "2002-05-07",
+    "genres": [
+      "Horror",
+      "Romance"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Emma Stone"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "NC-17",
+    "imdbId": "tt5916887",
+    "imdbRating": 9.2,
+    "imageUrl": "https://example.com/images/movie16.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 17#Romance",
+    "title": "Movie Title 17",
+    "director": "Greta Gerwig",
+    "year": 2018,
+    "duration": 114,
+    "releasedDate": "2018-06-02",
+    "genres": [
+      "Romance"
+    ],
+    "actors": [
+      "Zendaya",
+      "Leonardo DiCaprio",
+      "Christian Bale",
+      "Tom Hardy"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "G",
+    "imdbId": "tt2594724",
+    "imdbRating": 5.2,
+    "imageUrl": "https://example.com/images/movie17.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 18#Romance",
+    "title": "Movie Title 18",
+    "director": "Denis Villeneuve",
+    "year": 1995,
+    "duration": 176,
+    "releasedDate": "1995-11-18",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Thriller"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Emma Stone",
+      "Scarlett Johansson"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG-13",
+    "imdbId": "tt2044995",
+    "imdbRating": 5.4,
+    "imageUrl": "https://example.com/images/movie18.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 19#Sci-Fi",
+    "title": "Movie Title 19",
+    "director": "Christopher Nolan",
+    "year": 2009,
+    "duration": 156,
+    "releasedDate": "2009-05-18",
+    "genres": [
+      "Sci-Fi",
+      "Horror"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Brad Pitt",
+      "Zendaya"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "G",
+    "imdbId": "tt4265452",
+    "imdbRating": 9.2,
+    "imageUrl": "https://example.com/images/movie19.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 20#Thriller",
+    "title": "Movie Title 20",
+    "director": "Patty Jenkins",
+    "year": 2019,
+    "duration": 179,
+    "releasedDate": "2019-02-13",
+    "genres": [
+      "Thriller"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Timoth\u00e9e Chalamet",
+      "Leonardo DiCaprio",
+      "Zendaya"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "PG-13",
+    "imdbId": "tt2452093",
+    "imdbRating": 5.9,
+    "imageUrl": "https://example.com/images/movie20.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 21#Adventure",
+    "title": "Movie Title 21",
+    "director": "Patty Jenkins",
+    "year": 2010,
+    "duration": 157,
+    "releasedDate": "2010-09-15",
+    "genres": [
+      "Adventure"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Ryan Gosling",
+      "Leonardo DiCaprio",
+      "Zendaya",
+      "Denzel Washington"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "G",
+    "imdbId": "tt9745590",
+    "imdbRating": 8.4,
+    "imageUrl": "https://example.com/images/movie21.jpg",
+    "platforms": [
+      "Prime",
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 22#Comedy",
+    "title": "Movie Title 22",
+    "director": "Martin Scorsese",
+    "year": 1997,
+    "duration": 129,
+    "releasedDate": "1997-02-22",
+    "genres": [
+      "Comedy"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Tom Hardy"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt4462942",
+    "imdbRating": 6.1,
+    "imageUrl": "https://example.com/images/movie22.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 23#Comedy",
+    "title": "Movie Title 23",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "duration": 84,
+    "releasedDate": "2014-11-25",
+    "genres": [
+      "Comedy",
+      "Mystery"
+    ],
+    "actors": [
+      "Brad Pitt",
+      "Denzel Washington",
+      "Florence Pugh"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "G",
+    "imdbId": "tt6172399",
+    "imdbRating": 5.9,
+    "imageUrl": "https://example.com/images/movie23.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 24#Adventure",
+    "title": "Movie Title 24",
+    "director": "Greta Gerwig",
+    "year": 2022,
+    "duration": 100,
+    "releasedDate": "2022-08-11",
+    "genres": [
+      "Adventure",
+      "Horror"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Denzel Washington"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "G",
+    "imdbId": "tt2644191",
+    "imdbRating": 9.3,
+    "imageUrl": "https://example.com/images/movie24.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 25#Adventure",
+    "title": "Movie Title 25",
+    "director": "Christopher Nolan",
+    "year": 2013,
+    "duration": 119,
+    "releasedDate": "2013-01-14",
+    "genres": [
+      "Adventure"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Scarlett Johansson",
+      "Denzel Washington",
+      "Margot Robbie"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG-13",
+    "imdbId": "tt3744774",
+    "imdbRating": 8.9,
+    "imageUrl": "https://example.com/images/movie25.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 26#Fantasy",
+    "title": "Movie Title 26",
+    "director": "Greta Gerwig",
+    "year": 2004,
+    "duration": 113,
+    "releasedDate": "2004-11-02",
+    "genres": [
+      "Fantasy",
+      "Romance"
+    ],
+    "actors": [
+      "Brad Pitt",
+      "Florence Pugh"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "R",
+    "imdbId": "tt5881515",
+    "imdbRating": 5.9,
+    "imageUrl": "https://example.com/images/movie26.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 27#Mystery",
+    "title": "Movie Title 27",
+    "director": "Denis Villeneuve",
+    "year": 1992,
+    "duration": 85,
+    "releasedDate": "1992-03-16",
+    "genres": [
+      "Mystery",
+      "Fantasy",
+      "Romance"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Zendaya",
+      "Brad Pitt"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "R",
+    "imdbId": "tt2686055",
+    "imdbRating": 8.1,
+    "imageUrl": "https://example.com/images/movie27.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 28#Fantasy",
+    "title": "Movie Title 28",
+    "director": "Denis Villeneuve",
+    "year": 2002,
+    "duration": 179,
+    "releasedDate": "2002-11-26",
+    "genres": [
+      "Fantasy",
+      "Thriller"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Zendaya",
+      "Christian Bale",
+      "Scarlett Johansson",
+      "Brad Pitt"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "G",
+    "imdbId": "tt6083370",
+    "imdbRating": 8.9,
+    "imageUrl": "https://example.com/images/movie28.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 29#Adventure",
+    "title": "Movie Title 29",
+    "director": "Quentin Tarantino",
+    "year": 2007,
+    "duration": 96,
+    "releasedDate": "2007-11-08",
+    "genres": [
+      "Adventure",
+      "Comedy"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Emma Stone",
+      "Ryan Gosling"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "PG",
+    "imdbId": "tt1806060",
+    "imdbRating": 9.2,
+    "imageUrl": "https://example.com/images/movie29.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 30#Comedy",
+    "title": "Movie Title 30",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "duration": 88,
+    "releasedDate": "2010-10-23",
+    "genres": [
+      "Comedy",
+      "Thriller"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Christian Bale",
+      "Tom Hardy"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "NC-17",
+    "imdbId": "tt9090907",
+    "imdbRating": 8.8,
+    "imageUrl": "https://example.com/images/movie30.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 31#Adventure",
+    "title": "Movie Title 31",
+    "director": "Quentin Tarantino",
+    "year": 2006,
+    "duration": 124,
+    "releasedDate": "2006-04-16",
+    "genres": [
+      "Adventure",
+      "Horror"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Leonardo DiCaprio",
+      "Scarlett Johansson",
+      "Zendaya",
+      "Denzel Washington"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG",
+    "imdbId": "tt7727821",
+    "imdbRating": 6.0,
+    "imageUrl": "https://example.com/images/movie31.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 32#Thriller",
+    "title": "Movie Title 32",
+    "director": "Greta Gerwig",
+    "year": 2006,
+    "duration": 180,
+    "releasedDate": "2006-12-12",
+    "genres": [
+      "Thriller",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Brad Pitt",
+      "Christian Bale",
+      "Ryan Gosling"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "G",
+    "imdbId": "tt7582248",
+    "imdbRating": 5.7,
+    "imageUrl": "https://example.com/images/movie32.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 33#Adventure",
+    "title": "Movie Title 33",
+    "director": "Martin Scorsese",
+    "year": 2022,
+    "duration": 157,
+    "releasedDate": "2022-03-17",
+    "genres": [
+      "Adventure",
+      "Romance",
+      "Drama"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Christian Bale"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "R",
+    "imdbId": "tt6126099",
+    "imdbRating": 7.7,
+    "imageUrl": "https://example.com/images/movie33.jpg",
+    "platforms": [
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 34#Sci-Fi",
+    "title": "Movie Title 34",
+    "director": "Martin Scorsese",
+    "year": 2006,
+    "duration": 120,
+    "releasedDate": "2006-12-23",
+    "genres": [
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Christian Bale",
+      "Brad Pitt"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "G",
+    "imdbId": "tt2563021",
+    "imdbRating": 7.5,
+    "imageUrl": "https://example.com/images/movie34.jpg",
+    "platforms": [
+      "Prime",
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 35#Romance",
+    "title": "Movie Title 35",
+    "director": "Christopher Nolan",
+    "year": 1998,
+    "duration": 143,
+    "releasedDate": "1998-04-24",
+    "genres": [
+      "Romance",
+      "Thriller",
+      "Drama"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG",
+    "imdbId": "tt7784751",
+    "imdbRating": 6.8,
+    "imageUrl": "https://example.com/images/movie35.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 36#Action",
+    "title": "Movie Title 36",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "duration": 127,
+    "releasedDate": "2010-10-25",
+    "genres": [
+      "Action",
+      "Horror",
+      "Thriller"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Emma Stone",
+      "Zendaya",
+      "Tom Hardy"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "G",
+    "imdbId": "tt6718519",
+    "imdbRating": 9.3,
+    "imageUrl": "https://example.com/images/movie36.jpg",
+    "platforms": [
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 37#Adventure",
+    "title": "Movie Title 37",
+    "director": "Christopher Nolan",
+    "year": 1994,
+    "duration": 127,
+    "releasedDate": "1994-06-08",
+    "genres": [
+      "Adventure",
+      "Mystery"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "R",
+    "imdbId": "tt7135170",
+    "imdbRating": 5.4,
+    "imageUrl": "https://example.com/images/movie37.jpg",
+    "platforms": [
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 38#Adventure",
+    "title": "Movie Title 38",
+    "director": "Denis Villeneuve",
+    "year": 2005,
+    "duration": 90,
+    "releasedDate": "2005-10-20",
+    "genres": [
+      "Adventure",
+      "Horror"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Christian Bale"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "NC-17",
+    "imdbId": "tt4016476",
+    "imdbRating": 9.0,
+    "imageUrl": "https://example.com/images/movie38.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 39#Action",
+    "title": "Movie Title 39",
+    "director": "Christopher Nolan",
+    "year": 2021,
+    "duration": 92,
+    "releasedDate": "2021-09-01",
+    "genres": [
+      "Action"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Denzel Washington",
+      "Florence Pugh"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt1479407",
+    "imdbRating": 7.1,
+    "imageUrl": "https://example.com/images/movie39.jpg",
+    "platforms": [
+      "Netflix",
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 40#Sci-Fi",
+    "title": "Movie Title 40",
+    "director": "Christopher Nolan",
+    "year": 1995,
+    "duration": 145,
+    "releasedDate": "1995-01-16",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Thriller"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Margot Robbie",
+      "Christian Bale",
+      "Brad Pitt",
+      "Ryan Gosling"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG-13",
+    "imdbId": "tt8212789",
+    "imdbRating": 5.3,
+    "imageUrl": "https://example.com/images/movie40.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 41#Fantasy",
+    "title": "Movie Title 41",
+    "director": "Patty Jenkins",
+    "year": 1991,
+    "duration": 164,
+    "releasedDate": "1991-08-11",
+    "genres": [
+      "Fantasy"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Ryan Gosling",
+      "Tom Hardy",
+      "Scarlett Johansson"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "G",
+    "imdbId": "tt9841281",
+    "imdbRating": 6.4,
+    "imageUrl": "https://example.com/images/movie41.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 42#Comedy",
+    "title": "Movie Title 42",
+    "director": "Christopher Nolan",
+    "year": 1997,
+    "duration": 155,
+    "releasedDate": "1997-06-21",
+    "genres": [
+      "Comedy",
+      "Thriller",
+      "Horror"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Florence Pugh",
+      "Zendaya",
+      "Brad Pitt"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG",
+    "imdbId": "tt6964555",
+    "imdbRating": 7.3,
+    "imageUrl": "https://example.com/images/movie42.jpg",
+    "platforms": [
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 43#Horror",
+    "title": "Movie Title 43",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "duration": 143,
+    "releasedDate": "2010-04-20",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Christian Bale"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG",
+    "imdbId": "tt5141159",
+    "imdbRating": 7.5,
+    "imageUrl": "https://example.com/images/movie43.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 44#Horror",
+    "title": "Movie Title 44",
+    "director": "Patty Jenkins",
+    "year": 2015,
+    "duration": 122,
+    "releasedDate": "2015-07-14",
+    "genres": [
+      "Horror",
+      "Romance",
+      "Adventure"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Emma Stone",
+      "Florence Pugh",
+      "Tom Hardy"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG-13",
+    "imdbId": "tt3585409",
+    "imdbRating": 8.2,
+    "imageUrl": "https://example.com/images/movie44.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 45#Thriller",
+    "title": "Movie Title 45",
+    "director": "Martin Scorsese",
+    "year": 2011,
+    "duration": 159,
+    "releasedDate": "2011-08-12",
+    "genres": [
+      "Thriller",
+      "Fantasy"
+    ],
+    "actors": [
+      "Zendaya",
+      "Timoth\u00e9e Chalamet",
+      "Scarlett Johansson",
+      "Brad Pitt",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "R",
+    "imdbId": "tt3722035",
+    "imdbRating": 9.3,
+    "imageUrl": "https://example.com/images/movie45.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 46#Adventure",
+    "title": "Movie Title 46",
+    "director": "Denis Villeneuve",
+    "year": 1990,
+    "duration": 158,
+    "releasedDate": "1990-08-22",
+    "genres": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Denzel Washington",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "R",
+    "imdbId": "tt8022871",
+    "imdbRating": 8.8,
+    "imageUrl": "https://example.com/images/movie46.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 47#Fantasy",
+    "title": "Movie Title 47",
+    "director": "Denis Villeneuve",
+    "year": 2003,
+    "duration": 80,
+    "releasedDate": "2003-03-24",
+    "genres": [
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Christian Bale",
+      "Florence Pugh",
+      "Emma Stone"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG",
+    "imdbId": "tt7012257",
+    "imdbRating": 7.3,
+    "imageUrl": "https://example.com/images/movie47.jpg",
+    "platforms": [
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 48#Adventure",
+    "title": "Movie Title 48",
+    "director": "Christopher Nolan",
+    "year": 2003,
+    "duration": 161,
+    "releasedDate": "2003-03-04",
+    "genres": [
+      "Adventure"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Margot Robbie",
+      "Timoth\u00e9e Chalamet",
+      "Ryan Gosling"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG",
+    "imdbId": "tt2734420",
+    "imdbRating": 8.0,
+    "imageUrl": "https://example.com/images/movie48.jpg",
+    "platforms": [
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 49#Romance",
+    "title": "Movie Title 49",
+    "director": "Martin Scorsese",
+    "year": 2007,
+    "duration": 148,
+    "releasedDate": "2007-11-04",
+    "genres": [
+      "Romance"
+    ],
+    "actors": [
+      "Zendaya",
+      "Ryan Gosling",
+      "Christian Bale",
+      "Tom Hardy",
+      "Florence Pugh"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "PG-13",
+    "imdbId": "tt1699289",
+    "imdbRating": 7.6,
+    "imageUrl": "https://example.com/images/movie49.jpg",
+    "platforms": [
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 50#Adventure",
+    "title": "Movie Title 50",
+    "director": "Patty Jenkins",
+    "year": 2021,
+    "duration": 169,
+    "releasedDate": "2021-06-06",
+    "genres": [
+      "Adventure"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Timoth\u00e9e Chalamet",
+      "Margot Robbie",
+      "Christian Bale"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "G",
+    "imdbId": "tt4444738",
+    "imdbRating": 6.2,
+    "imageUrl": "https://example.com/images/movie50.jpg",
+    "platforms": [
+      "Prime",
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 51#Drama",
+    "title": "Movie Title 51",
+    "director": "Greta Gerwig",
+    "year": 2006,
+    "duration": 134,
+    "releasedDate": "2006-12-14",
+    "genres": [
+      "Drama"
+    ],
+    "actors": [
+      "Brad Pitt",
+      "Emma Stone",
+      "Timoth\u00e9e Chalamet",
+      "Zendaya",
+      "Margot Robbie"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "R",
+    "imdbId": "tt4197777",
+    "imdbRating": 5.6,
+    "imageUrl": "https://example.com/images/movie51.jpg",
+    "platforms": [
+      "Max",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 52#Horror",
+    "title": "Movie Title 52",
+    "director": "Denis Villeneuve",
+    "year": 2015,
+    "duration": 90,
+    "releasedDate": "2015-06-24",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Scarlett Johansson"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "R",
+    "imdbId": "tt6868002",
+    "imdbRating": 5.2,
+    "imageUrl": "https://example.com/images/movie52.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 53#Romance",
+    "title": "Movie Title 53",
+    "director": "Patty Jenkins",
+    "year": 2013,
+    "duration": 115,
+    "releasedDate": "2013-03-06",
+    "genres": [
+      "Romance",
+      "Drama",
+      "Mystery"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Tom Hardy"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "G",
+    "imdbId": "tt8487238",
+    "imdbRating": 5.5,
+    "imageUrl": "https://example.com/images/movie53.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 54#Sci-Fi",
+    "title": "Movie Title 54",
+    "director": "Christopher Nolan",
+    "year": 2013,
+    "duration": 179,
+    "releasedDate": "2013-11-18",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Comedy"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Denzel Washington"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG",
+    "imdbId": "tt4409969",
+    "imdbRating": 8.9,
+    "imageUrl": "https://example.com/images/movie54.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 55#Romance",
+    "title": "Movie Title 55",
+    "director": "Patty Jenkins",
+    "year": 2004,
+    "duration": 153,
+    "releasedDate": "2004-03-17",
+    "genres": [
+      "Romance",
+      "Action"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "G",
+    "imdbId": "tt8838182",
+    "imdbRating": 9.0,
+    "imageUrl": "https://example.com/images/movie55.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 56#Sci-Fi",
+    "title": "Movie Title 56",
+    "director": "Patty Jenkins",
+    "year": 2003,
+    "duration": 153,
+    "releasedDate": "2003-05-15",
+    "genres": [
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "actors": [
+      "Emma Stone",
+      "Denzel Washington",
+      "Zendaya",
+      "Timoth\u00e9e Chalamet",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "G",
+    "imdbId": "tt5064717",
+    "imdbRating": 7.6,
+    "imageUrl": "https://example.com/images/movie56.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 57#Comedy",
+    "title": "Movie Title 57",
+    "director": "Greta Gerwig",
+    "year": 1994,
+    "duration": 163,
+    "releasedDate": "1994-03-16",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Adventure"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Tom Hardy",
+      "Zendaya",
+      "Florence Pugh",
+      "Denzel Washington"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "G",
+    "imdbId": "tt9672056",
+    "imdbRating": 6.1,
+    "imageUrl": "https://example.com/images/movie57.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 58#Drama",
+    "title": "Movie Title 58",
+    "director": "Greta Gerwig",
+    "year": 2008,
+    "duration": 137,
+    "releasedDate": "2008-04-20",
+    "genres": [
+      "Drama",
+      "Action",
+      "Mystery"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Florence Pugh"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG",
+    "imdbId": "tt8231608",
+    "imdbRating": 5.2,
+    "imageUrl": "https://example.com/images/movie58.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 59#Sci-Fi",
+    "title": "Movie Title 59",
+    "director": "Greta Gerwig",
+    "year": 2013,
+    "duration": 143,
+    "releasedDate": "2013-02-22",
+    "genres": [
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Christian Bale"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "R",
+    "imdbId": "tt3202708",
+    "imdbRating": 7.1,
+    "imageUrl": "https://example.com/images/movie59.jpg",
+    "platforms": [
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 60#Comedy",
+    "title": "Movie Title 60",
+    "director": "Denis Villeneuve",
+    "year": 2016,
+    "duration": 128,
+    "releasedDate": "2016-12-24",
+    "genres": [
+      "Comedy",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Leonardo DiCaprio",
+      "Tom Hardy",
+      "Timoth\u00e9e Chalamet",
+      "Zendaya"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "R",
+    "imdbId": "tt7040902",
+    "imdbRating": 6.5,
+    "imageUrl": "https://example.com/images/movie60.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 61#Horror",
+    "title": "Movie Title 61",
+    "director": "Quentin Tarantino",
+    "year": 2001,
+    "duration": 128,
+    "releasedDate": "2001-01-07",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Zendaya",
+      "Florence Pugh"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "PG-13",
+    "imdbId": "tt4411769",
+    "imdbRating": 9.3,
+    "imageUrl": "https://example.com/images/movie61.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 62#Romance",
+    "title": "Movie Title 62",
+    "director": "Denis Villeneuve",
+    "year": 2004,
+    "duration": 99,
+    "releasedDate": "2004-06-17",
+    "genres": [
+      "Romance",
+      "Horror"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Christian Bale",
+      "Brad Pitt"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "NC-17",
+    "imdbId": "tt7424361",
+    "imdbRating": 5.5,
+    "imageUrl": "https://example.com/images/movie62.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 63#Fantasy",
+    "title": "Movie Title 63",
+    "director": "Patty Jenkins",
+    "year": 2022,
+    "duration": 176,
+    "releasedDate": "2022-03-27",
+    "genres": [
+      "Fantasy"
+    ],
+    "actors": [
+      "Zendaya",
+      "Denzel Washington"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG-13",
+    "imdbId": "tt5114700",
+    "imdbRating": 7.4,
+    "imageUrl": "https://example.com/images/movie63.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 64#Romance",
+    "title": "Movie Title 64",
+    "director": "Christopher Nolan",
+    "year": 2001,
+    "duration": 119,
+    "releasedDate": "2001-10-24",
+    "genres": [
+      "Romance",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Ryan Gosling",
+      "Brad Pitt"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "G",
+    "imdbId": "tt8748373",
+    "imdbRating": 5.4,
+    "imageUrl": "https://example.com/images/movie64.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 65#Mystery",
+    "title": "Movie Title 65",
+    "director": "Denis Villeneuve",
+    "year": 2015,
+    "duration": 179,
+    "releasedDate": "2015-11-10",
+    "genres": [
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Ryan Gosling",
+      "Leonardo DiCaprio",
+      "Brad Pitt",
+      "Scarlett Johansson"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "NC-17",
+    "imdbId": "tt7685477",
+    "imdbRating": 9.5,
+    "imageUrl": "https://example.com/images/movie65.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 66#Adventure",
+    "title": "Movie Title 66",
+    "director": "Christopher Nolan",
+    "year": 2007,
+    "duration": 178,
+    "releasedDate": "2007-06-15",
+    "genres": [
+      "Adventure",
+      "Horror"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Timoth\u00e9e Chalamet",
+      "Tom Hardy",
+      "Brad Pitt"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "NC-17",
+    "imdbId": "tt6107769",
+    "imdbRating": 8.3,
+    "imageUrl": "https://example.com/images/movie66.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 67#Sci-Fi",
+    "title": "Movie Title 67",
+    "director": "Greta Gerwig",
+    "year": 2015,
+    "duration": 171,
+    "releasedDate": "2015-11-14",
+    "genres": [
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Zendaya",
+      "Denzel Washington"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "R",
+    "imdbId": "tt1658258",
+    "imdbRating": 9.3,
+    "imageUrl": "https://example.com/images/movie67.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 68#Sci-Fi",
+    "title": "Movie Title 68",
+    "director": "Denis Villeneuve",
+    "year": 2007,
+    "duration": 115,
+    "releasedDate": "2007-05-08",
+    "genres": [
+      "Sci-Fi",
+      "Mystery"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Margot Robbie",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "R",
+    "imdbId": "tt7933650",
+    "imdbRating": 5.1,
+    "imageUrl": "https://example.com/images/movie68.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 69#Thriller",
+    "title": "Movie Title 69",
+    "director": "Greta Gerwig",
+    "year": 2018,
+    "duration": 104,
+    "releasedDate": "2018-09-13",
+    "genres": [
+      "Thriller",
+      "Horror"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Christian Bale",
+      "Tom Hardy",
+      "Denzel Washington"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "R",
+    "imdbId": "tt8725376",
+    "imdbRating": 8.6,
+    "imageUrl": "https://example.com/images/movie69.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 70#Drama",
+    "title": "Movie Title 70",
+    "director": "Patty Jenkins",
+    "year": 2017,
+    "duration": 122,
+    "releasedDate": "2017-04-17",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Scarlett Johansson",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "G",
+    "imdbId": "tt6830005",
+    "imdbRating": 8.5,
+    "imageUrl": "https://example.com/images/movie70.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 71#Action",
+    "title": "Movie Title 71",
+    "director": "Martin Scorsese",
+    "year": 1997,
+    "duration": 157,
+    "releasedDate": "1997-03-17",
+    "genres": [
+      "Action"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Zendaya"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "NC-17",
+    "imdbId": "tt8646264",
+    "imdbRating": 9.0,
+    "imageUrl": "https://example.com/images/movie71.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 72#Romance",
+    "title": "Movie Title 72",
+    "director": "Martin Scorsese",
+    "year": 2006,
+    "duration": 178,
+    "releasedDate": "2006-09-07",
+    "genres": [
+      "Romance",
+      "Thriller",
+      "Horror"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Christian Bale"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "R",
+    "imdbId": "tt5574199",
+    "imdbRating": 5.0,
+    "imageUrl": "https://example.com/images/movie72.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 73#Drama",
+    "title": "Movie Title 73",
+    "director": "Martin Scorsese",
+    "year": 2005,
+    "duration": 107,
+    "releasedDate": "2005-01-17",
+    "genres": [
+      "Drama",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Margot Robbie",
+      "Christian Bale",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "G",
+    "imdbId": "tt6558429",
+    "imdbRating": 6.6,
+    "imageUrl": "https://example.com/images/movie73.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 74#Adventure",
+    "title": "Movie Title 74",
+    "director": "Christopher Nolan",
+    "year": 2019,
+    "duration": 154,
+    "releasedDate": "2019-12-19",
+    "genres": [
+      "Adventure",
+      "Sci-Fi",
+      "Action"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Denzel Washington",
+      "Brad Pitt",
+      "Christian Bale"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "G",
+    "imdbId": "tt7097233",
+    "imdbRating": 6.6,
+    "imageUrl": "https://example.com/images/movie74.jpg",
+    "platforms": [
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 75#Romance",
+    "title": "Movie Title 75",
+    "director": "Greta Gerwig",
+    "year": 2016,
+    "duration": 136,
+    "releasedDate": "2016-05-11",
+    "genres": [
+      "Romance",
+      "Adventure",
+      "Mystery"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Florence Pugh",
+      "Christian Bale",
+      "Margot Robbie",
+      "Emma Stone"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG",
+    "imdbId": "tt3598951",
+    "imdbRating": 7.1,
+    "imageUrl": "https://example.com/images/movie75.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 76#Horror",
+    "title": "Movie Title 76",
+    "director": "Quentin Tarantino",
+    "year": 2004,
+    "duration": 114,
+    "releasedDate": "2004-01-13",
+    "genres": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Emma Stone",
+      "Timoth\u00e9e Chalamet",
+      "Zendaya",
+      "Brad Pitt"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "PG",
+    "imdbId": "tt1589993",
+    "imdbRating": 7.7,
+    "imageUrl": "https://example.com/images/movie76.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 77#Thriller",
+    "title": "Movie Title 77",
+    "director": "Patty Jenkins",
+    "year": 2018,
+    "duration": 107,
+    "releasedDate": "2018-04-13",
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Emma Stone",
+      "Denzel Washington"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "R",
+    "imdbId": "tt4066505",
+    "imdbRating": 5.5,
+    "imageUrl": "https://example.com/images/movie77.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 78#Romance",
+    "title": "Movie Title 78",
+    "director": "Christopher Nolan",
+    "year": 2023,
+    "duration": 160,
+    "releasedDate": "2023-08-05",
+    "genres": [
+      "Romance",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Emma Stone",
+      "Tom Hardy",
+      "Christian Bale"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "NC-17",
+    "imdbId": "tt9905166",
+    "imdbRating": 5.0,
+    "imageUrl": "https://example.com/images/movie78.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 79#Horror",
+    "title": "Movie Title 79",
+    "director": "Patty Jenkins",
+    "year": 2004,
+    "duration": 136,
+    "releasedDate": "2004-04-14",
+    "genres": [
+      "Horror",
+      "Adventure"
+    ],
+    "actors": [
+      "Zendaya",
+      "Timoth\u00e9e Chalamet",
+      "Emma Stone",
+      "Florence Pugh"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "NC-17",
+    "imdbId": "tt5750565",
+    "imdbRating": 5.7,
+    "imageUrl": "https://example.com/images/movie79.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 80#Horror",
+    "title": "Movie Title 80",
+    "director": "Christopher Nolan",
+    "year": 2006,
+    "duration": 150,
+    "releasedDate": "2006-03-10",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Timoth\u00e9e Chalamet",
+      "Ryan Gosling",
+      "Leonardo DiCaprio",
+      "Margot Robbie"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG-13",
+    "imdbId": "tt6009077",
+    "imdbRating": 5.2,
+    "imageUrl": "https://example.com/images/movie80.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 81#Horror",
+    "title": "Movie Title 81",
+    "director": "Martin Scorsese",
+    "year": 2023,
+    "duration": 101,
+    "releasedDate": "2023-11-01",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Leonardo DiCaprio",
+      "Tom Hardy",
+      "Christian Bale",
+      "Emma Stone",
+      "Florence Pugh"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "R",
+    "imdbId": "tt6529811",
+    "imdbRating": 6.8,
+    "imageUrl": "https://example.com/images/movie81.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 82#Adventure",
+    "title": "Movie Title 82",
+    "director": "Patty Jenkins",
+    "year": 2020,
+    "duration": 102,
+    "releasedDate": "2020-09-21",
+    "genres": [
+      "Adventure",
+      "Mystery"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Denzel Washington",
+      "Tom Hardy"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "NC-17",
+    "imdbId": "tt2830501",
+    "imdbRating": 9.5,
+    "imageUrl": "https://example.com/images/movie82.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 83#Sci-Fi",
+    "title": "Movie Title 83",
+    "director": "Christopher Nolan",
+    "year": 1996,
+    "duration": 118,
+    "releasedDate": "1996-11-23",
+    "genres": [
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Timoth\u00e9e Chalamet",
+      "Tom Hardy",
+      "Zendaya"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt3490651",
+    "imdbRating": 5.5,
+    "imageUrl": "https://example.com/images/movie83.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 84#Thriller",
+    "title": "Movie Title 84",
+    "director": "Denis Villeneuve",
+    "year": 2018,
+    "duration": 173,
+    "releasedDate": "2018-06-21",
+    "genres": [
+      "Thriller",
+      "Horror",
+      "Romance"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Denzel Washington"
+    ],
+    "synopsis": "A gripping tale of love and betrayal set in a dystopian future.",
+    "rating": "G",
+    "imdbId": "tt5863882",
+    "imdbRating": 9.1,
+    "imageUrl": "https://example.com/images/movie84.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 85#Thriller",
+    "title": "Movie Title 85",
+    "director": "Greta Gerwig",
+    "year": 2020,
+    "duration": 103,
+    "releasedDate": "2020-06-28",
+    "genres": [
+      "Thriller"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Leonardo DiCaprio",
+      "Florence Pugh",
+      "Ryan Gosling",
+      "Margot Robbie"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt1184767",
+    "imdbRating": 8.5,
+    "imageUrl": "https://example.com/images/movie85.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 86#Sci-Fi",
+    "title": "Movie Title 86",
+    "director": "Patty Jenkins",
+    "year": 2010,
+    "duration": 155,
+    "releasedDate": "2010-02-19",
+    "genres": [
+      "Sci-Fi",
+      "Romance"
+    ],
+    "actors": [
+      "Brad Pitt",
+      "Emma Stone",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG-13",
+    "imdbId": "tt3060392",
+    "imdbRating": 5.7,
+    "imageUrl": "https://example.com/images/movie86.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 87#Comedy",
+    "title": "Movie Title 87",
+    "director": "Greta Gerwig",
+    "year": 1994,
+    "duration": 157,
+    "releasedDate": "1994-06-27",
+    "genres": [
+      "Comedy",
+      "Mystery",
+      "Drama"
+    ],
+    "actors": [
+      "Brad Pitt",
+      "Tom Hardy",
+      "Timoth\u00e9e Chalamet",
+      "Denzel Washington",
+      "Emma Stone"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "R",
+    "imdbId": "tt2081240",
+    "imdbRating": 7.1,
+    "imageUrl": "https://example.com/images/movie87.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 88#Action",
+    "title": "Movie Title 88",
+    "director": "Patty Jenkins",
+    "year": 2016,
+    "duration": 111,
+    "releasedDate": "2016-10-19",
+    "genres": [
+      "Action"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Zendaya",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG-13",
+    "imdbId": "tt2928084",
+    "imdbRating": 8.9,
+    "imageUrl": "https://example.com/images/movie88.jpg",
+    "platforms": [
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 89#Horror",
+    "title": "Movie Title 89",
+    "director": "Greta Gerwig",
+    "year": 2012,
+    "duration": 175,
+    "releasedDate": "2012-10-20",
+    "genres": [
+      "Horror",
+      "Fantasy",
+      "Drama"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Timoth\u00e9e Chalamet",
+      "Ryan Gosling",
+      "Zendaya"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "PG-13",
+    "imdbId": "tt8203284",
+    "imdbRating": 7.1,
+    "imageUrl": "https://example.com/images/movie89.jpg",
+    "platforms": [
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 90#Fantasy",
+    "title": "Movie Title 90",
+    "director": "Denis Villeneuve",
+    "year": 2001,
+    "duration": 125,
+    "releasedDate": "2001-04-14",
+    "genres": [
+      "Fantasy"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Emma Stone",
+      "Brad Pitt",
+      "Ryan Gosling"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "G",
+    "imdbId": "tt6046102",
+    "imdbRating": 8.8,
+    "imageUrl": "https://example.com/images/movie90.jpg",
+    "platforms": [
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 91#Sci-Fi",
+    "title": "Movie Title 91",
+    "director": "Quentin Tarantino",
+    "year": 2005,
+    "duration": 107,
+    "releasedDate": "2005-01-27",
+    "genres": [
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "actors": [
+      "Margot Robbie",
+      "Scarlett Johansson",
+      "Florence Pugh",
+      "Leonardo DiCaprio",
+      "Emma Stone"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt4071793",
+    "imdbRating": 7.7,
+    "imageUrl": "https://example.com/images/movie91.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 92#Drama",
+    "title": "Movie Title 92",
+    "director": "Martin Scorsese",
+    "year": 1998,
+    "duration": 140,
+    "releasedDate": "1998-04-12",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Action"
+    ],
+    "actors": [
+      "Christian Bale",
+      "Brad Pitt",
+      "Leonardo DiCaprio",
+      "Emma Stone",
+      "Timoth\u00e9e Chalamet"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG",
+    "imdbId": "tt8346133",
+    "imdbRating": 5.2,
+    "imageUrl": "https://example.com/images/movie92.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 93#Horror",
+    "title": "Movie Title 93",
+    "director": "Christopher Nolan",
+    "year": 2011,
+    "duration": 87,
+    "releasedDate": "2011-04-25",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Tom Hardy",
+      "Christian Bale"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "PG",
+    "imdbId": "tt9791350",
+    "imdbRating": 7.3,
+    "imageUrl": "https://example.com/images/movie93.jpg",
+    "platforms": [
+      "Max",
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 94#Thriller",
+    "title": "Movie Title 94",
+    "director": "Christopher Nolan",
+    "year": 1991,
+    "duration": 99,
+    "releasedDate": "1991-07-08",
+    "genres": [
+      "Thriller",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Scarlett Johansson",
+      "Christian Bale"
+    ],
+    "synopsis": "An unlikely hero rises against all odds to save their homeland.",
+    "rating": "PG-13",
+    "imdbId": "tt3858852",
+    "imdbRating": 8.9,
+    "imageUrl": "https://example.com/images/movie94.jpg",
+    "platforms": [
+      "Max",
+      "Prime",
+      "Netflix"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 95#Sci-Fi",
+    "title": "Movie Title 95",
+    "director": "Greta Gerwig",
+    "year": 2020,
+    "duration": 176,
+    "releasedDate": "2020-07-09",
+    "genres": [
+      "Sci-Fi",
+      "Romance",
+      "Action"
+    ],
+    "actors": [
+      "Tom Hardy",
+      "Denzel Washington",
+      "Florence Pugh",
+      "Ryan Gosling"
+    ],
+    "synopsis": "A detective races against time to solve a mysterious case.",
+    "rating": "PG-13",
+    "imdbId": "tt7703039",
+    "imdbRating": 5.7,
+    "imageUrl": "https://example.com/images/movie95.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 96#Mystery",
+    "title": "Movie Title 96",
+    "director": "Patty Jenkins",
+    "year": 1998,
+    "duration": 109,
+    "releasedDate": "1998-01-18",
+    "genres": [
+      "Mystery",
+      "Action"
+    ],
+    "actors": [
+      "Ryan Gosling",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A mind-bending journey through alternate realities.",
+    "rating": "PG",
+    "imdbId": "tt9705753",
+    "imdbRating": 5.7,
+    "imageUrl": "https://example.com/images/movie96.jpg",
+    "platforms": [
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Prime",
+    "movieId": "Movie Title 97#Horror",
+    "title": "Movie Title 97",
+    "director": "Denis Villeneuve",
+    "year": 2023,
+    "duration": 167,
+    "releasedDate": "2023-06-26",
+    "genres": [
+      "Horror",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "actors": [
+      "Florence Pugh",
+      "Margot Robbie",
+      "Denzel Washington"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "R",
+    "imdbId": "tt3338742",
+    "imdbRating": 6.8,
+    "imageUrl": "https://example.com/images/movie97.jpg",
+    "platforms": [
+      "Prime",
+      "Max"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 98#Horror",
+    "title": "Movie Title 98",
+    "director": "Patty Jenkins",
+    "year": 1999,
+    "duration": 107,
+    "releasedDate": "1999-09-07",
+    "genres": [
+      "Horror"
+    ],
+    "actors": [
+      "Denzel Washington",
+      "Leonardo DiCaprio"
+    ],
+    "synopsis": "A coming-of-age story with a supernatural twist.",
+    "rating": "NC-17",
+    "imdbId": "tt9085829",
+    "imdbRating": 7.8,
+    "imageUrl": "https://example.com/images/movie98.jpg",
+    "platforms": [
+      "Netflix",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Max",
+    "movieId": "Movie Title 99#Adventure",
+    "title": "Movie Title 99",
+    "director": "Christopher Nolan",
+    "year": 2006,
+    "duration": 121,
+    "releasedDate": "2006-10-26",
+    "genres": [
+      "Adventure",
+      "Mystery",
+      "Romance"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Zendaya",
+      "Ryan Gosling",
+      "Christian Bale"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "PG",
+    "imdbId": "tt4242361",
+    "imdbRating": 7.5,
+    "imageUrl": "https://example.com/images/movie99.jpg",
+    "platforms": [
+      "Max",
+      "Prime"
+    ]
+  },
+  {
+    "platform": "Netflix",
+    "movieId": "Movie Title 100#Thriller",
+    "title": "Movie Title 100",
+    "director": "Patty Jenkins",
+    "year": 2020,
+    "duration": 121,
+    "releasedDate": "2020-02-19",
+    "genres": [
+      "Thriller",
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "actors": [
+      "Scarlett Johansson",
+      "Timoth\u00e9e Chalamet",
+      "Zendaya"
+    ],
+    "synopsis": "Two lovers find each other amidst the chaos of war.",
+    "rating": "NC-17",
+    "imdbId": "tt5611858",
+    "imdbRating": 8.6,
+    "imageUrl": "https://example.com/images/movie100.jpg",
+    "platforms": [
+      "Netflix"
+    ]
+  }
+]
