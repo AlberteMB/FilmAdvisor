@@ -3,6 +3,7 @@ import { PanelProps } from "../types/PanelProps";
 import genres from "../data/genres.json";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { SelectChangeEvent } from "@mui/material/Select";
+import { useFilterContext } from "../context/FilterContext";
 
 const YearPanel = ({ title, children, isOpen, onToggle }:
     PanelProps): JSX.Element =>  {
@@ -23,7 +24,10 @@ const YearPanel = ({ title, children, isOpen, onToggle }:
 export { YearPanel };
 
 const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolean; onToggle: () => void }) => {
-  const [selectedGenre, setSelectedGenre] = useState<string>('');
+  //const [selectedGenre, setSelectedGenre] = useState<string>('');
+  const { selectedGenres, setSelectedGenres } = useFilterContext();
+
+
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedGenre(event.target.value);
@@ -57,7 +61,9 @@ export { GenrePanel };
 
 
 const PlatformPanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolean; onToggle: () => void }) => {
-    const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
+    //const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
+    const { selectedPlatforms, setSelectedPlatforms } = useFilterContext();
+
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { value, checked } = event.target;

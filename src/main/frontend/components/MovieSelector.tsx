@@ -4,6 +4,7 @@ import moviesData from "../data/movies.json";
 import MovieCard from "../components/MovieCard";
 import { Movie } from "../model/Movie";
 import { MovieEndpoint } from 'Frontend/generated/endpoints';
+import { useFilterContext } from "../context/FilterContext";
 
 const movies: Movie[] = moviesData;
 
