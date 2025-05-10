@@ -4,6 +4,7 @@ import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.hilla.Endpoint;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -33,19 +34,20 @@ public class MovieEndpoint {
         return movieRepository.findByPlatformAndGenre(platform, genre);
     }
 
-    public List<Movie> getFilteredRandomMovies(Movie.Genre genre, List<String> platforms) {
-        // Aquí haces tu lógica de filtrado usando DynamoDB
-        List<Movie> byGenre = movieRepository.findByGenre(genre); // Supón que ya existe
+    public List<Movie> getFilteredRandomMovies(Movie.Genre genre, List<String> platforms, int numMovies) {
+        List<Movie> filtered = new ArrayList<>();
 
-        // Filtrar por plataformas
-        List<Movie> filtered = byGenre.stream()
-                .filter(m -> m.getPlatforms().stream().anyMatch(platforms::contains))
-                .collect(Collectors.toList());
+        for (String platform : platforms) {
+            List<Movie> result = movieRepository.findByPlatformAndGenre(platform, genre);
+            filtered.addAll(result);
+        }
 
-        // Barajar y devolver 9 aleatorias
         Collections.shuffle(filtered);
-        return filtered.stream().limit(9).toList();
+        return filtered.stream()
+                .limit(Math.min(numMovies, filtered.size()))
+                .toList();
     }
+
 
 
 
