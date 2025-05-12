@@ -8,17 +8,18 @@ import { useFilterContext } from "../context/FilterContext";
 
 const movies: Movie[] = moviesData;
 
-const MoviesSelector = () => {
+const MovieSelector = () => {
     const { selectedGenres, selectedPlatforms } = useFilterContext();
     const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
     const [numMovies, setNumMovies] = useState<number>(3);
+    const [triggerFetch, setTriggerFetch] = useState(false);
 
     useEffect(() => {
         if (!triggerFetch) return;
 
         const fetchMovies = async () => {
           try {
-            const genre = selectedGenres.length > 0 ? selectedGenres[0].toUpperCase() : "ANY";
+            const genre = selectedGenres.length > 0 ? selectedGenres[0].toUpperCase() : null;
             const movies = await MovieEndpoint.getFilteredRandomMovies(genre, selectedPlatforms, numMovies);
             setSelectedMovies(movies);
           } catch (error) {
@@ -38,7 +39,7 @@ const MoviesSelector = () => {
           }
 
         setTriggerFetch(true);
-    );
+    };
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
@@ -57,7 +58,7 @@ const MoviesSelector = () => {
       </label>
 
       {/* Button to get random movies */}
-        <<button onClick={handleSubmit} style={{ padding: "10px" }}>
+        <button onClick={handleSubmit} style={{ padding: "10px" }}>
             Obtener películas
         </button>
 
@@ -75,5 +76,5 @@ const MoviesSelector = () => {
   );
 };
 
-export default MoviesSelector;
+export default MovieSelector;
 

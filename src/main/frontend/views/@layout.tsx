@@ -4,6 +4,7 @@ import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem } from '@vaadin/rea
 import { Suspense, useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import  MovieFilter  from '../components/MovieFilter';
+import { FilterProvider } from '../context/FilterContext';
 
 const documentTitleSignal = signal('');
 effect(() => {
@@ -38,9 +39,7 @@ export default function MainLayout() {
               </SideNavItem>
             ))}
           </SideNav>
-
-          <MovieFilter/>
-
+            <MovieFilter/>
         </header>
       </div>
       <DrawerToggle slot="navbar" aria-label="Menu toggle"></DrawerToggle>

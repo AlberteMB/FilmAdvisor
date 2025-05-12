@@ -1,6 +1,6 @@
 import { ViewConfig } from '@vaadin/hilla-file-router/types.js';
-import MovieCard from "../components/MovieCard.jsx";
-import MovieRandomizer from "../components/MovieSelector.jsx";
+import MovieCard from "../components/MovieCard";
+import MovieSelector from "../components/MovieSelector";
 
 export const config: ViewConfig = { menu: { order: 0, icon: 'line-awesome/svg/file.svg' }, title: 'Main' };
 
