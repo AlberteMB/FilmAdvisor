@@ -5,9 +5,7 @@ import com.vaadin.hilla.Endpoint;
 import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Endpoint
@@ -36,7 +34,7 @@ public class MovieEndpoint {
     }
 
     public List<Movie> getFilteredRandomMovies(@Nullable Movie.Genre genre, List<String> platforms, int numMovies) {
-        List<Movie> filtered = new ArrayList<>();
+        Set<Movie> uniqueMovies = new HashSet<>();
 
         for (String platform : platforms) {
             List<Movie> result;
@@ -47,13 +45,13 @@ public class MovieEndpoint {
                 result = movieRepository.findByPlatformAndGenre(platform, genre);
             }
 
-            filtered.addAll(result);
+            uniqueMovies.addAll(result);
         }
+        List<Movie> shuffledMovies = new ArrayList<>(uniqueMovies);
+        Collections.shuffle(shuffledMovies);
 
-        Collections.shuffle(filtered);
-
-        return filtered.stream()
-                .limit(Math.min(numMovies, filtered.size()))
+        return shuffledMovies.stream()
+                .limit(Math.min(numMovies, shuffledMovies.size()))
                 .toList();
     }
 
