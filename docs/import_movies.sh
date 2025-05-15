@@ -7,6 +7,7 @@ jq -c '.[]' "$JSON_FILE" | while IFS= read -r movie; do
   aws dynamodb put-item \
     --table-name "$TABLE_NAME" \
     --item "$(echo "$movie" | jq '{
+      "id": {"S": .id},
       "platform": {"S": .platform},
       "movieId": {"S": .movieId},
       "title": {"S": .title},

@@ -1,5 +1,6 @@
 import json
 import random
+import uuid
 from datetime import date
 
 platforms = ["Netflix", "Prime", "Max"]
@@ -32,6 +33,7 @@ def generate_movie(i):
     movie_id = f"{title}#{genres[0]}"
 
     return {
+        "id": str(uuid.uuid4()),
         "platform": main_platform,
         "movieId": movie_id,
         "title": title,
