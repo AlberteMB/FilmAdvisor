@@ -3,14 +3,12 @@ package amb.movie;
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.*;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @DynamoDbBean
 public class Movie {
 
+    private UUID id;
     private String platform; // Partition key
     private String movieId; // Sort Key. Title#Genre
     private String title;
@@ -52,6 +50,10 @@ public class Movie {
         return year;
     }
     public void setYear(int year) { this.year = year; }
+
+    @DynamoDbAttribute("Id")
+    public UUID getId() {        return id; }
+    public void setId(UUID id) { this.id = id; }
 
     @DynamoDbAttribute("Duration")
     public int getDuration() {        return duration; }
@@ -110,5 +112,18 @@ public class Movie {
 
     public String generateMovieId() {
         return this.title.toLowerCase().replace(" ", "-") + "#" + this.year;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Movie)) return false;
+        Movie movie = (Movie) o;
+        return Objects.equals(id, movie.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }
