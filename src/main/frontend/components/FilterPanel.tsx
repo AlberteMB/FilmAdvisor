@@ -30,7 +30,7 @@ const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolea
 
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedGenre(event.target.value);
+    setSelectedGenres(event.target.value);
   };
 
   return (
