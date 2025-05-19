@@ -6,7 +6,6 @@ import jakarta.annotation.Nullable;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Endpoint
 @AnonymousAllowed
@@ -29,11 +28,11 @@ public class MovieEndpoint {
         return movieRepository.findByPlatform(platform);
     }
 
-    public List<Movie> findByPlatformAndGenre(String platform, Movie.Genre genre) {
+    public List<Movie> findByPlatformAndGenre(String platform, Genre genre) {
         return movieRepository.findByPlatformAndGenre(platform, genre);
     }
 
-    public List<Movie> getFilteredRandomMovies(@Nullable Movie.Genre genre, List<String> platforms, int numMovies) {
+    public List<Movie> getFilteredRandomMovies(@Nullable Genre genre, List<String> platforms, int numMovies) {
         Set<Movie> uniqueMovies = new HashSet<>();
 
         for (String platform : platforms) {

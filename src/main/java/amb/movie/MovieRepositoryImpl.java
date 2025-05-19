@@ -55,7 +55,7 @@ public class MovieRepositoryImpl implements MovieRepository  {
     }
 
     @Override
-    public List<Movie> findByPlatformAndGenre(String platform, Movie.Genre genre) {
+    public List<Movie> findByPlatformAndGenre(String platform, Genre genre) {
         DynamoDbTable<Movie> table = getTable();
         Key key = Key.builder().partitionValue(platform).build();
 
@@ -76,7 +76,7 @@ public class MovieRepositoryImpl implements MovieRepository  {
     }
 
     @Override
-    public List<Movie> findByGenre(Movie.Genre genre) {
+    public List<Movie> findByGenre(Genre genre) {
         DynamoDbEnhancedClient enhancedClient = getEnhancedClient();
         DynamoDbTable<Movie> table = enhancedClient.table("Movie", TableSchema.fromBean(Movie.class));
 

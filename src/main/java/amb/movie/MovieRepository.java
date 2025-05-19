@@ -13,9 +13,9 @@ public interface MovieRepository {
 
     List<Movie> findByPlatform(String platform);
 
-    List<Movie> findByPlatformAndGenre(String platform, Movie.Genre genre);
+    List<Movie> findByPlatformAndGenre(String platform, Genre genre);
 
-    List<Movie> findByGenre(Movie.Genre genre);
+    List<Movie> findByGenre(Genre genre);
 
     //List<Movie> findByYear(int year);
 

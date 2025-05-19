@@ -100,11 +100,6 @@ public class Movie {
     public List<String> getPlatforms() {return platforms; }
     public void setPlatforms(List<String> platforms) { this.platforms = platforms; }
 
-    public enum Genre {
-        ACTION,  SCI_FI, COMEDY, DRAMA, HORROR, ROMANCE,
-        THRILLER, ANIMATION
-    }
-
     public enum Rating {
         G, PG, PG_13, R
     }
