@@ -7,7 +7,7 @@ platforms = ["Netflix", "Prime", "Max"]
 directors = ["Christopher Nolan", "Greta Gerwig", "Quentin Tarantino", "Martin Scorsese", "Patty Jenkins", "Denis Villeneuve"]
 actors_pool = ["Leonardo DiCaprio", "Emma Stone", "Brad Pitt", "Margot Robbie", "Denzel Washington", "Scarlett Johansson",
                "Tom Hardy", "Florence Pugh", "Christian Bale", "Zendaya", "Timothée Chalamet", "Ryan Gosling"]
-genres_pool = ["Action", "Drama", "Comedy", "Sci-Fi", "Thriller", "Romance", "Fantasy", "Horror", "Mystery", "Adventure"]
+genres_pool = ["ACTION", "DRAMA", "COMEDY", "SCI_FI", "THRILLER", "ROMANCE", "HORROR", "ANIMATION"]
 synopses = [
     "A gripping tale of love and betrayal set in a dystopian future.",
     "An unlikely hero rises against all odds to save their homeland.",
