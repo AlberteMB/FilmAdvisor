@@ -38,14 +38,14 @@ public class Movie {
     public void setMovieId(String movieId) { this.movieId = movieId; }
 
     // GSI search by genre
-    @DynamoDbSecondaryPartitionKey(indexNames = "GenreIndex")
+    @DynamoDbAttribute("Genres")
     public Set<Genre> getGenres() {
         return genres;
     }
     public void setGenres(Set<Genre> genres) { this.genres = genres; }
 
     // GSI search by year
-    @DynamoDbSecondaryPartitionKey(indexNames = "YearIndex")
+    @DynamoDbAttribute("Year")
     public int getYear() {
         return year;
     }
