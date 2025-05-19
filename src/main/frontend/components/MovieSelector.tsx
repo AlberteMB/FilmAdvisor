@@ -9,7 +9,7 @@ import { useFilterContext } from "../context/FilterContext";
 const movies: Movie[] = moviesData;
 
 const MovieSelector = () => {
-    const { selectedGenres, selectedPlatforms } = useFilterContext();
+    const { selectedGenre, selectedPlatforms } = useFilterContext();
     const [selectedMovies, setSelectedMovies] = useState<Movie[]>([]);
     const [numMovies, setNumMovies] = useState<number>(3);
     const [triggerFetch, setTriggerFetch] = useState(false);
@@ -19,7 +19,7 @@ const MovieSelector = () => {
 
         const fetchMovies = async () => {
           try {
-            const genre = selectedGenres.length > 0 ? selectedGenres[0].toUpperCase() : null;
+            const genre = selectedGenre.length > 0 ? selectedGenre[0].toUpperCase() : null;
             const movies = await MovieEndpoint.getFilteredRandomMovies(genre, selectedPlatforms, numMovies);
             setSelectedMovies(movies);
           } catch (error) {
@@ -30,7 +30,7 @@ const MovieSelector = () => {
         };
 
         fetchMovies();
-      }, [triggerFetch, selectedGenres, selectedPlatforms, numMovies]);
+      }, [triggerFetch, selectedGenre, selectedPlatforms, numMovies]);
 
     const handleSubmit = async () => {
         if (selectedPlatforms.length === 0) {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PanelProps } from "../types/PanelProps";
-import genres from "../data/genres.json";
+import genresList from "../data/genresList.json";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { SelectChangeEvent } from "@mui/material/Select";
 import { useFilterContext } from "../context/FilterContext";
@@ -25,12 +25,12 @@ export { YearPanel };
 
 const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolean; onToggle: () => void }) => {
   //const [selectedGenre, setSelectedGenre] = useState<string>('');
-  const { selectedGenres, setSelectedGenres } = useFilterContext();
+  const { selectedGenre, setSelectedGenre } = useFilterContext();
 
 
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedGenres(event.target.value);
+    setSelectedGenre(event.target.value);
   };
 
   return (
@@ -46,7 +46,7 @@ const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolea
             className="w-full p-2 border rounded"
           >
             <option value="">Selecciona un género</option>
-            {genres.map((genre) => (
+            {genresList.map((genre) => (
               <option key={genre} value={genre}>
                 {genre}
               </option>
@@ -164,7 +164,7 @@ return(
                   className="w-full p-2 border rounded"
                 >
                   <option value="">Todos los géneros</option>
-                  {genres.map((genre) => (
+                  {genresList.map((genre) => (
                     <option key={genre} value={genre}>
                       {genre}
                     </option>

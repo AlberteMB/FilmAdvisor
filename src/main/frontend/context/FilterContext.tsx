@@ -1,21 +1,21 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 
 type FilterState = {
-  selectedGenres: string[];
+  selectedGenre: string;
   selectedPlatforms: string[];
-  setSelectedGenres: (genres: string[]) => void;
+  setSelectedGenre: (genre: string) => void;
   setSelectedPlatforms: (platforms: string[]) => void;
 };
 
 const FilterContext = createContext<FilterState | undefined>(undefined);
 
 export const FilterProvider = ({ children }: { children: ReactNode }) => {
-  const [selectedGenres, setSelectedGenres] = useState<string[]>([]);
+  const [selectedGenre, setSelectedGenre] = useState<string>();
   const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
 
   return (
     <FilterContext.Provider
-      value={{ selectedGenres, selectedPlatforms, setSelectedGenres, setSelectedPlatforms }}
+      value={{ selectedGenre, selectedPlatforms, setSelectedGenre, setSelectedPlatforms }}
     >
       {children}
     </FilterContext.Provider>
