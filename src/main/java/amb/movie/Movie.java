@@ -16,7 +16,7 @@ public class Movie {
     private int year;
     private int duration;
     private LocalDate releasedDate;
-    private Set<Genre> genres = new HashSet<>(); // Use Set to avoid duplicates
+    private Genre genre; // Use Set to avoid duplicates
     private List<String> actors = new ArrayList<>();
     private String synopsis;
     private Rating rating;
@@ -38,11 +38,11 @@ public class Movie {
     public void setMovieId(String movieId) { this.movieId = movieId; }
 
     // GSI search by genre
-    @DynamoDbAttribute("Genres")
-    public Set<Genre> getGenres() {
-        return genres;
+    @DynamoDbAttribute("Genre")
+    public Genre getGenre() {
+        return genre;
     }
-    public void setGenres(Set<Genre> genres) { this.genres = genres; }
+    public void setGenre(Genre genres) { this.genre = genres; }
 
     // GSI search by year
     @DynamoDbAttribute("Year")
@@ -101,9 +101,8 @@ public class Movie {
     public void setPlatforms(List<String> platforms) { this.platforms = platforms; }
 
     public enum Genre {
-        ACTION, ADVENTURE, SCI_FI, COMEDY, DRAMA, FANTASY, HORROR, ROMANCE,
-        THRILLER, ANIMATION, FAMILY, HISTORICAL, WAR,
-        WESTERN, SPORTS, BIOPIC, MYSTERY, MUSICAL, ANIME, LGBT
+        ACTION,  SCI_FI, COMEDY, DRAMA, HORROR, ROMANCE,
+        THRILLER, ANIMATION
     }
 
     public enum Rating {

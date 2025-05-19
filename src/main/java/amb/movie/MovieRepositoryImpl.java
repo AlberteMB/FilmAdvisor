@@ -67,7 +67,7 @@ public class MovieRepositoryImpl implements MovieRepository  {
 
         for (Page<Movie> page : pages) {
             for (Movie movie : page.items()) {
-                if (movie.getGenres().contains(genre)) {
+                if (genre.equals(movie.getGenre())) {
                     results.add(movie);
                 }
             }
