@@ -16,7 +16,7 @@ public class Movie {
     private int year;
     private int duration;
     private LocalDate releasedDate;
-    private Genre genre; // Use Set to avoid duplicates
+    private Genre genre;
     private List<String> actors = new ArrayList<>();
     private String synopsis;
     private Rating rating;
