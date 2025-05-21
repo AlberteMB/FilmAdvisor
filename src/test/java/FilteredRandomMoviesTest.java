@@ -52,6 +52,10 @@ public class FilteredRandomMoviesTest {
         Set<UUID> uniqueIds = result.stream().map(Movie::getId).collect(Collectors.toSet());
         assertEquals(result.size(), uniqueIds.size(), "Debe haber películas con IDs únicos");
 
+        System.out.println("🎬 Películas devueltas por getFilteredRandomMovies:");
+        result.forEach(movie -> System.out.println("• " + movie.getTitle() + " (" + movie.getGenre() + ")"));
+
+
     }
 
     private Movie createMovie(UUID id, String title, Genre genre) {
