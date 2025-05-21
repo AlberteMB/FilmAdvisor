@@ -75,7 +75,7 @@ const PlatformPanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boo
     };
 
     // Opciones hardcodeadas
-    const platformOptions = ["Netflix", "Prime"];
+    const platformOptions = ["Netflix", "Prime", "HBO"];
 
     return (
         <div>
@@ -105,7 +105,7 @@ const PlatformPanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boo
 
 export { PlatformPanel };
 
-const FilterPanel = ({
+/*const FilterPanel = ({
     title,
     isOpen,
     onToggle
@@ -179,6 +179,6 @@ return(
 
 export { FilterPanel };
 
-
+*/
 
 
