@@ -4,7 +4,7 @@ type FilterState = {
   selectedGenre: string;
   selectedPlatforms: string[];
   setSelectedGenre: (genre: string) => void;
-  setSelectedPlatforms: (platforms: string[]) => void;
+  setSelectedPlatforms: React.Dispatch<React.SetStateAction<string[]>>;
 };
 
 const FilterContext = createContext<FilterState | undefined>(undefined);
