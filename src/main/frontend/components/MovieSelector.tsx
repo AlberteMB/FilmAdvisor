@@ -19,7 +19,7 @@ const MovieSelector = () => {
 
         const fetchMovies = async () => {
           try {
-            const genre = selectedGenre.length > 0 ? selectedGenre[0].toUpperCase() : null;
+            const genre = selectedGenre && selectedGenre !== "" ? selectedGenre : null;
             const movies = await MovieEndpoint.getFilteredRandomMovies(genre, selectedPlatforms, numMovies);
             setSelectedMovies(movies);
           } catch (error) {
