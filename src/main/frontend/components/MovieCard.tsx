@@ -7,6 +7,7 @@ interface MovieCardProps {
 }
 
 const MovieCard = ({ movie }: MovieCardProps) => {
+     console.log("Rendering movie:", movie);
   return (
     <Box sx={{ display: "flex", justifyContent: "center", my: 2 }}>
       <Card>
@@ -21,10 +22,13 @@ const MovieCard = ({ movie }: MovieCardProps) => {
             <strong>Género:</strong> {movie.genre}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="text">
-            <strong>Puntuación:</strong> ⭐ {movie.rating}
+            <strong>Puntuación:</strong> ⭐ {movie.imdbRating}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="text">
-            <strong>Disponible en:</strong> {movie.platforms.join(", ")}
+            <strong>Disponible en:</strong>{" "}
+            {Array.isArray(movie.platforms) && movie.platforms.length > 0
+              ? movie.platforms.join(", ")
+              : movie.platform ?? "No disponible"}
           </Typography>
         </CardContent>
       </Card>
