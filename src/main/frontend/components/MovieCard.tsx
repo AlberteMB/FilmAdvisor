@@ -18,13 +18,13 @@ const MovieCard = ({ movie }: MovieCardProps) => {
             <strong>Director:</strong> {movie.director}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="text">
-            <strong>Género:</strong> {movie.genre.join(", ")}
+            <strong>Género:</strong> {movie.genre}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="text">
             <strong>Puntuación:</strong> ⭐ {movie.rating}
           </Typography>
           <Typography variant="body2" color="text.secondary" className="text">
-            <strong>Disponible en:</strong> {movie.streamingPlatforms.join(", ")}
+            <strong>Disponible en:</strong> {movie.platforms.join(", ")}
           </Typography>
         </CardContent>
       </Card>
