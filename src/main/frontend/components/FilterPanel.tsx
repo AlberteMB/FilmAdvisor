@@ -75,7 +75,7 @@ const PlatformPanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boo
     };
 
     // Opciones hardcodeadas
-    const platformOptions = ["Netflix", "Prime", "HBO"];
+    const platformOptions = ["Netflix", "Prime", "Max"];
 
     return (
         <div>
