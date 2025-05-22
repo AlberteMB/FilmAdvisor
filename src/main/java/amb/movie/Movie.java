@@ -23,7 +23,7 @@ public class Movie {
     private String imdbId; // Use this to generate the link to IMDb
     private double imdbRating;
     private String imageUrl;
-    private List<String> platforms = new ArrayList<>();
+    private List<Platform> platforms = new ArrayList<>();
 
     @DynamoDbPartitionKey
     public String getPlatform() {
@@ -97,11 +97,15 @@ public class Movie {
     public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 
     @DynamoDbAttribute("Platforms")
-    public List<String> getPlatforms() {return platforms; }
-    public void setPlatforms(List<String> platforms) { this.platforms = platforms; }
+    public List<Platform> getPlatforms() {return platforms; }
+    public void setPlatforms(List<Platform> platforms) { this.platforms = platforms; }
 
     public enum Rating {
         G, PG, PG_13, R
+    }
+
+    public enum Platform {
+        Netflix, Prime, Max
     }
 
     public String generateMovieId() {
