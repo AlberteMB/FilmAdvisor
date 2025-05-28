@@ -38,65 +38,65 @@ public class Movie {
     public void setMovieId(String movieId) { this.movieId = movieId; }
 
     // GSI search by genre
-    @DynamoDbAttribute("Genre")
+    @DynamoDbAttribute("genre")
     public Genre getGenre() {
         return genre;
     }
     public void setGenre(Genre genres) { this.genre = genres; }
 
     // GSI search by year
-    @DynamoDbAttribute("Year")
+    @DynamoDbAttribute("year")
     public int getYear() {
         return year;
     }
     public void setYear(int year) { this.year = year; }
 
-    @DynamoDbAttribute("Id")
+    @DynamoDbAttribute("id")
     public UUID getId() {        return id; }
     public void setId(UUID id) { this.id = id; }
 
-    @DynamoDbAttribute("Duration")
+    @DynamoDbAttribute("duration")
     public int getDuration() {        return duration; }
     public void setDuration(int duration) { this.duration = duration; }
 
-    @DynamoDbAttribute("Title")
+    @DynamoDbAttribute("title")
     public String getTitle() {        return title; }
     public void setTitle(String title) { this.title = title; }
 
-    @DynamoDbAttribute("Director")
+    @DynamoDbAttribute("director")
     public String getDirector() {return director;}
     public void setDirector(String director) { this.director = director; }
 
-    @DynamoDbAttribute("ReleasedDate")
+    @DynamoDbAttribute("releasedDate")
     public LocalDate getReleasedDate() {return releasedDate; }
     public void setReleasedDate(LocalDate releasedDate) { this.releasedDate = releasedDate; }
 
 
-    @DynamoDbAttribute("Actors")
+    @DynamoDbAttribute("actors")
     public List<String> getActors() {return actors; }
     public void setActors(List<String> actors) { this.actors = actors; }
 
-    @DynamoDbAttribute("Synopsis")
+    @DynamoDbAttribute("synopsis")
     public String getSynopsis(){return synopsis; }
     public void setSynopsis(String synopsis) { this.synopsis = synopsis; }
 
-    @DynamoDbAttribute("AgeRating")
+    @DynamoDbAttribute("ageRating")
     public Rating getAgeRating() {return rating; }
     public void setRating(Rating rating) { this.rating = rating; }
 
-    @DynamoDbAttribute("ImdbId")
+    @DynamoDbAttribute("imdbId")
     public String getImdbId() {return imdbId; }
     public void setImdbId(String imdbId) { this.imdbId = imdbId; }
 
-    @DynamoDbAttribute("ImdbRating")
+    @DynamoDbAttribute("imdbRating")
     public double getImdbRating() {return imdbRating; }
     public void setImdbRating(double imdbRating) { this.imdbRating = imdbRating; }
 
-    @DynamoDbAttribute("ImageUrl")
+    @DynamoDbAttribute("imageUrl")
     public String getImageUrl(){return imageUrl; }
     public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 
-    @DynamoDbAttribute("Platforms")
+    @DynamoDbAttribute("platforms")
     public List<Platform> getPlatforms() {return platforms; }
     public void setPlatforms(List<Platform> platforms) { this.platforms = platforms; }
 

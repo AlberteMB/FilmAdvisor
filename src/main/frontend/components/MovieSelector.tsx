@@ -27,6 +27,7 @@ const MovieSelector = () => {
             const movies = await MovieEndpoint.getFilteredRandomMovies(genre, selectedPlatforms, numMovies);
             if (movies) {
               setSelectedMovies(movies.filter((m): m is Movie => m !== undefined) as Movie[]);
+              console.log(movies);
             } else {
               setSelectedMovies([]);
             }
@@ -73,7 +74,9 @@ const MovieSelector = () => {
       {/* Container with movies */}
       <Container maxWidth="md" style={{ marginTop: "20px" }}>
         <Grid container spacing={2}>
-          {selectedMovies.map((movie) => (
+          {selectedMovies
+            .filter((movie) => typeof movie.id === "string" && movie.id)
+            .map((movie) => (
             <Grid item xs={12} sm={6} md={4} key={movie.id}>
               <MovieCard movie={movie} />
             </Grid>
