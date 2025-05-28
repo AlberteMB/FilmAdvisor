@@ -2,18 +2,15 @@ import { useState, useEffect } from "react";
 import { Grid, Container } from "@mui/material";
 //import moviesData from "../data/movies.json";
 import MovieCard from "../components/MovieCard";
-import { Movie } from "../model/Movie";
+//import { Movie } from "../model/Movie";
+import Movie from "Frontend/generated/amb/movie/Movie";
 import { MovieEndpoint } from 'Frontend/generated/endpoints';
 import { useFilterContext } from "../context/FilterContext";
 import { genreList } from "../data/genreList";
 import Genre from "Frontend/generated/amb/movie/Genre";
+import isValidGenre from "../utils/isValidGenre";
 
-//const movies: Movie[] = moviesData;
-
-const isValidGenre = (value: string): value is Genre => {
-  return genreList.includes(value as Genre);
-};
-
+//const movies: Movie[]
 
 const MovieSelector = () => {
     const { selectedGenre, selectedPlatforms } = useFilterContext();
@@ -28,7 +25,11 @@ const MovieSelector = () => {
           try {
             const genre = selectedGenre;
             const movies = await MovieEndpoint.getFilteredRandomMovies(genre, selectedPlatforms, numMovies);
-            setSelectedMovies(movies);
+            if (movies) {
+              setSelectedMovies(movies.filter((m): m is Movie => m !== undefined) as Movie[]);
+            } else {
+              setSelectedMovies([]);
+            }
           } catch (error) {
             console.error("Error fetching movies:", error);
           } finally {

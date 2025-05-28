@@ -4,6 +4,7 @@ import genresList from "../data/genresList.json";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { SelectChangeEvent } from "@mui/material/Select";
 import { useFilterContext } from "../context/FilterContext";
+import isValidGenre from "../utils/isValidGenre";
 
 const YearPanel = ({ title, children, isOpen, onToggle }:
     PanelProps): JSX.Element =>  {
@@ -30,7 +31,12 @@ const GenrePanel = ({ title, isOpen, onToggle }: { title: string; isOpen: boolea
 
 
   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedGenre(event.target.value);
+    const value = event.target.value;
+      if (isValidGenre(value)) {
+        setSelectedGenre(value);
+      } else {
+        setSelectedGenre(undefined);
+      }
   };
 
   return (

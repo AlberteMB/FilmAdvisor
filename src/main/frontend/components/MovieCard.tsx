@@ -1,5 +1,6 @@
 import { Card, CardContent, Typography, Box } from "@mui/material";
-import { Movie } from "../model/Movie";
+//import { Movie } from "../model/Movie";
+import Movie from "Frontend/generated/amb/movie/Movie";
 import "../themes/MovieCard.css";
 
 interface MovieCardProps {

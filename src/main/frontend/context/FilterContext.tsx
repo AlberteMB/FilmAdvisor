@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, ReactNode } from "react";
 //import { Genre, genreList } from "../data/genresList";
-import type { Genre } from 'Frontend/generated/amb/movie/Genre';
+import Genre from 'Frontend/generated/amb/movie/Genre';
 
 type FilterState = {
     selectedGenre?: Genre;
