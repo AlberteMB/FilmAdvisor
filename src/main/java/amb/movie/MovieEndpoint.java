@@ -3,7 +3,18 @@ package amb.movie;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.hilla.Endpoint;
 import jakarta.annotation.Nullable;
+import org.apache.commons.configuration2.tree.QueryResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
+import software.amazon.awssdk.enhanced.dynamodb.Key;
+import software.amazon.awssdk.enhanced.dynamodb.TableSchema;
+import software.amazon.awssdk.enhanced.dynamodb.model.PageIterable;
+import software.amazon.awssdk.enhanced.dynamodb.model.QueryConditional;
+import software.amazon.awssdk.services.dynamodb.model.AttributeValue;
+import software.amazon.awssdk.services.dynamodb.model.QueryRequest;
+import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
+import software.amazon.awssdk.services.dynamodb.model.QueryResponse;
+
 
 import java.util.*;
 
@@ -33,25 +44,22 @@ public class MovieEndpoint {
     }
 
     public List<Movie> getFilteredRandomMovies(@Nullable Genre genre, List<String> platforms, int numMovies) {
+
+        System.out.println("Parámetros recibidos: platform=" + platforms + ", genres=" + genre + ", count=" + numMovies);
+
         Set<Movie> uniqueMovies = new HashSet<>();
 
         for (String platform : platforms) {
-            List<Movie> result;
-
-            if (genre == null) {
-                result = movieRepository.findByPlatform(platform);
-            } else {
-                result = movieRepository.findByPlatformAndGenre(platform, genre);
-            }
-
-            uniqueMovies.addAll(result);
+            List<Movie> movies = movieRepository.findByPlatformAndGenre(platform, genre);
+            uniqueMovies.addAll(movies);
         }
-        List<Movie> shuffledMovies = new ArrayList<>(uniqueMovies);
-        Collections.shuffle(shuffledMovies);
 
-        return shuffledMovies.stream()
-                .limit(Math.min(numMovies, shuffledMovies.size()))
-                .toList();
+        System.out.println("🎬 Películas filtradas por platform y genre: " + uniqueMovies.size());
+
+        List<Movie> shuffled = new ArrayList<>(uniqueMovies);
+        Collections.shuffle(shuffled);
+
+        return shuffled.stream().limit(numMovies).toList();
     }
 
 

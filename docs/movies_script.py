@@ -23,14 +23,14 @@ def generate_movie(i):
     year = random.randint(1990, 2024)
     duration = random.randint(80, 180)
     release_date = date(year, random.randint(1, 12), random.randint(1, 28))
-    genres = random.sample(genres_pool, k=random.randint(1, 3))
     actors = random.sample(actors_pool, k=random.randint(2, 5))
+    genre = random.choice(genres_pool)
     imdb_id = f"tt{random.randint(1000000, 9999999)}"
     imdb_rating = round(random.uniform(5.0, 9.5), 1)
     image_url = f"https://example.com/images/movie{i+1}.jpg"
     available_platforms = random.sample(platforms, k=random.randint(1, 3))
     main_platform = available_platforms[0]
-    movie_id = f"{title}#{genres[0]}"
+    movie_id = f"{title}#{genre}"
 
     return {
         "id": str(uuid.uuid4()),
@@ -41,7 +41,7 @@ def generate_movie(i):
         "year": year,
         "duration": duration,
         "releasedDate": release_date.isoformat(),
-        "genres": genres,
+        "genre": genre,
         "actors": actors,
         "synopsis": random.choice(synopses),
         "rating": random.choice(ratings),

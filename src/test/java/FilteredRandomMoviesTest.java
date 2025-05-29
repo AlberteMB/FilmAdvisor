@@ -1,4 +1,5 @@
 import amb.movie.*;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -68,7 +69,29 @@ public class FilteredRandomMoviesTest {
         return movie;
     }
 
+    @Test
+    void findByPlatformAndGenre_returnsExistingMovies() {
+        // Arrange
+        String platform = "Netflix";
+        Genre genre = Genre.ACTION;
 
+        // Act
+        List<Movie> movies = movieRepository.findByPlatformAndGenre(platform, genre);
+
+        System.out.println("Películas encontradas:");
+        movies.forEach(m -> System.out.println(m.getTitle() + " - " + m.getGenre()));
+
+        // Assert
+        Assertions.assertNotNull(movies, "La lista de películas no debe ser nula");
+        Assertions.assertFalse(movies.isEmpty(), "Debe haber al menos una película para la plataforma y género indicados");
+        Assertions.assertTrue(movies.stream().allMatch(m -> platform.equals(m.getPlatform())),
+                "Todas las películas deben ser de la plataforma indicada");
+        Assertions.assertTrue(movies.stream().allMatch(m -> genre.equals(m.getGenre())),
+                "Todas las películas deben ser del género indicado");
+
+        // Print movies
+        movies.forEach(m -> System.out.println(m.getTitle() + " (" + m.getYear() + ")"));
+    }
 
 
 }

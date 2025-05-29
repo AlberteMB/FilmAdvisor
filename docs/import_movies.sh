@@ -14,7 +14,7 @@ jq -c '.[]' "$JSON_FILE" | while IFS= read -r movie; do
       "director": {"S": .director},
       "year": {"N": (.year | tostring)},
       "releasedDate": {"S": .releasedDate},
-      "genres": {"SS": .genres},
+      "genre": {"S": .genre},
       "actors": {"SS": .actors},
       "synopsis": {"S": .synopsis},
       "rating": {"S": .rating},

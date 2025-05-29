@@ -24,7 +24,17 @@ const MovieSelector = () => {
         const fetchMovies = async () => {
           try {
             const genre = selectedGenre;
+
+            console.log("Enviando filtros al backend:", {
+                      genre,
+                      selectedPlatforms,
+                      numMovies,
+                    });
+
             const movies = await MovieEndpoint.getFilteredRandomMovies(genre, selectedPlatforms, numMovies);
+
+            console.log("Películas recibidas del backend:", movies);
+
             if (movies) {
               setSelectedMovies(movies.filter((m): m is Movie => m !== undefined) as Movie[]);
               console.log(movies);
@@ -42,6 +52,8 @@ const MovieSelector = () => {
       }, [triggerFetch, selectedGenre, selectedPlatforms, numMovies]);
 
     const handleSubmit = async () => {
+         console.log("Botón 'Obtener películas' pulsado");
+
         if (selectedPlatforms.length === 0) {
             alert("Selecciona al menos  una plataforma.");
             return;
