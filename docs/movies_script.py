@@ -30,7 +30,7 @@ def generate_movie(i):
     image_url = f"https://example.com/images/movie{i+1}.jpg"
     available_platforms = random.sample(platforms, k=random.randint(1, 3))
     main_platform = available_platforms[0]
-    movie_id = f"{title}#{genre}"
+    movie_id = f"{genre}#{title}"
 
     return {
         "id": str(uuid.uuid4()),

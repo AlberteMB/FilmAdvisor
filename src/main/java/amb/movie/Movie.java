@@ -10,7 +10,7 @@ public class Movie {
 
     private UUID id;
     private String platform; // Partition key
-    private String movieId; // Sort Key. Title#Genre
+    private String movieId; // Sort Key Genre#Title
     private String title;
     private String director;
     private int year;
@@ -109,7 +109,7 @@ public class Movie {
     }
 
     public String generateMovieId() {
-        return this.title.toLowerCase().replace(" ", "-") + "#" + this.year;
+        return this.year + "#" + this.title.toLowerCase().replace(" ", "-");
     }
 
     @Override
