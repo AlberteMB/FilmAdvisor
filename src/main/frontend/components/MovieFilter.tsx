@@ -18,7 +18,7 @@ const MovieFilter = () => {
         isOpen={openPanel === "platformPanel"}
         onToggle={() => handleToggle("platformPanel")}
       >
-        Platforms
+
       </PlatformPanel>
 
       <GenrePanel
@@ -26,7 +26,7 @@ const MovieFilter = () => {
         isOpen={openPanel === "genrePanel"}
         onToggle={() => handleToggle("genrePanel")}
       >
-        Genres
+
       </GenrePanel>
 
       <YearPanel

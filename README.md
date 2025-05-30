@@ -1,3 +1,62 @@
+# 🎬 FilmAdvisor
+The FilmAdvisor is a web-based application designed to help users discover, filter, and manage movies across different streaming platforms. This document provides a high-level introduction to the system architecture, core components, and key features of the FilmAdvisor system.
+
+##System Purpose
+FilmAdvisor serves as a centralized movie recommendation and management platform that allows users to:
+
+- Browse and filter movies by various criteria (genre, platform, year)
+- Discover random movie recommendations
+- View detailed movie information
+- Track watched movies and save favorites
+- For detailed information about the complete system architecture, see System Architecture.
+
+## 🚀 Tech Stack
+### Backend
+
+- **Java 21**
+
+- **Spring Boot 3.4.3**
+
+- **Vaadin Hilla** (Vaadin + TypeScript with secure endpoints)
+
+- **AWS DynamoDB** – NoSQL database for storing movies, metadata, and availability.
+
+- **PostgreSQL** – For user authentication and profile persistence (used alongside DynamoDB).
+
+- **Streaming Availability API** – To fetch real-time streaming availability.
+
+- **IMDb** – For optional rating integration.
+
+### Frontend
+
+- Vaadin: Version 24.6.6 for the UI framework
+- Accordion filter components for genres and other preferences.
+
+##  🔧 Features
+- **User Profiles:** Users can define their preferred streaming platforms and filter settings.
+
+- **Random Movie Discovery:**
+
+    - Filter by *genre*, *release year*, and *platform*.
+
+    - Choose to display 3, 6, or 9 movies.
+
+- **Streaming Availability:** View where each movie is available to watch.
+
+- **Interactive Lists:**
+
+    - Mark movies as *watched* or *discarded*.
+
+    - Give watched movies a *like* or *dislike*.
+
+- **Temporary Retry ("Try Again") Button:** Get a fresh set of suggestions without saving them.
+
+- **Detailed Movie View:** Expand to show synopsis, IMDb/Filmaffinity links, and platform links.
+
+- **Direct Search:** Search by title, director, actor, or genre.
+
+---
+
 # Custom project from Hilla
 
 This project can be used as a starting point to create your own Hilla application with Spring Boot.

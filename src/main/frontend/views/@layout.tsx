@@ -4,6 +4,7 @@ import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem } from '@vaadin/rea
 import { Suspense, useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import  MovieFilter  from '../components/MovieFilter';
+import { FilterProvider } from '../context/FilterContext';
 
 const documentTitleSignal = signal('');
 effect(() => {
@@ -25,6 +26,7 @@ export default function MainLayout() {
   }, [currentTitle]);
 
   return (
+  <FilterProvider>
     <AppLayout primarySection="drawer">
       <div slot="drawer" className="flex flex-col justify-between h-full p-m">
         <header className="flex flex-col gap-m">
@@ -37,18 +39,17 @@ export default function MainLayout() {
               </SideNavItem>
             ))}
           </SideNav>
-          <MovieFilter/>
+            <MovieFilter/>
         </header>
       </div>
-
       <DrawerToggle slot="navbar" aria-label="Menu toggle"></DrawerToggle>
       <h1 slot="navbar" className="text-l m-0">
         {documentTitleSignal}
       </h1>
-
       <Suspense>
         <Outlet />
       </Suspense>
     </AppLayout>
+  </FilterProvider>
   );
 }
