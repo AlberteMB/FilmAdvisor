@@ -38,40 +38,39 @@ public class MovieRepositoryImpl implements MovieRepository  {
     @Override
     public List<Movie> findByPlatform(String platform) {
         DynamoDbTable<Movie> table = getTable();
-        Key key = Key.builder().partitionValue(platform).build();
 
-        QueryConditional queryConditional = QueryConditional.keyEqualTo(key);
+        QueryConditional queryConditional = QueryConditional
+                .keyEqualTo(Key.builder().partitionValue(platform).build());
 
         List<Movie> results = new ArrayList<>();
 
-        SdkIterable<Page<Movie>> pages = table.query(r -> r.queryConditional(queryConditional));
+        table.query(r -> r.queryConditional(queryConditional))
+                .forEach(page -> results.addAll(page.items()));
 
-        for (Page<Movie> page : pages) {
-            for (Movie movie : page.items()) {
-                results.add(movie);
-            }
-        }
         return results;
     }
 
     @Override
     public List<Movie> findByPlatformAndGenre(String platform, Genre genre) {
         DynamoDbTable<Movie> table = getTable();
-        Key key = Key.builder().partitionValue(platform).build();
 
-        QueryConditional queryConditional = QueryConditional.keyEqualTo(key);
+        // Usamos el prefix "Genre#"
+        String genrePrefix = genre.name() + "#";
+
+        QueryConditional queryConditional = QueryConditional
+                .sortBeginsWith(Key.builder()
+                        .partitionValue(platform)
+                        .sortValue(genrePrefix)
+                        .build());
 
         List<Movie> results = new ArrayList<>();
 
         SdkIterable<Page<Movie>> pages = table.query(r -> r.queryConditional(queryConditional));
 
         for (Page<Movie> page : pages) {
-            for (Movie movie : page.items()) {
-                if (genre.equals(movie.getGenre())) {
-                    results.add(movie);
-                }
-            }
+            results.addAll(page.items());
         }
+
         return results;
     }
 
