@@ -4,6 +4,8 @@ import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem } from '@vaadin/rea
 import { Suspense, useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import  MovieFilter  from '../components/MovieFilter';
+import { FilterProvider } from '../context/FilterContext';
+import { useAuth } from "react-oidc-context";
 
 const documentTitleSignal = signal('');
 effect(() => {
@@ -17,6 +19,22 @@ export default function MainLayout() {
   const currentTitle = useViewConfig()?.title;
   const navigate = useNavigate();
   const location = useLocation();
+  const auth = useAuth();
+
+  if (auth.isLoading) {
+      return <div>Cargando autenticación...</div>;
+    }
+
+    // If there is an error
+    if (auth.error) {
+      return <div>Error de autenticación: {auth.error.message}</div>;
+    }
+
+    // Not authenticated
+    if (!auth.isAuthenticated) {
+      auth.signinRedirect();
+      return null;
+    }
 
   useEffect(() => {
     if (currentTitle) {
@@ -25,6 +43,7 @@ export default function MainLayout() {
   }, [currentTitle]);
 
   return (
+  <FilterProvider>
     <AppLayout primarySection="drawer">
       <div slot="drawer" className="flex flex-col justify-between h-full p-m">
         <header className="flex flex-col gap-m">
@@ -37,18 +56,17 @@ export default function MainLayout() {
               </SideNavItem>
             ))}
           </SideNav>
-          <MovieFilter/>
+            <MovieFilter/>
         </header>
       </div>
-
       <DrawerToggle slot="navbar" aria-label="Menu toggle"></DrawerToggle>
       <h1 slot="navbar" className="text-l m-0">
         {documentTitleSignal}
       </h1>
-
       <Suspense>
         <Outlet />
       </Suspense>
     </AppLayout>
+  </FilterProvider>
   );
 }
