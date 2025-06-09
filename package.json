@@ -62,7 +62,7 @@
     "strip-css-comments": "5.0.0",
     "transform-ast": "2.4.4",
     "typescript": "5.7.3",
-    "vite": "6.0.11",
+    "vite": "^6.3.5",
     "vite-plugin-checker": "0.8.0",
     "workbox-build": "7.3.0",
     "workbox-core": "7.3.0",
@@ -128,7 +128,7 @@
       "workbox-core": "7.3.0",
       "workbox-precaching": "7.3.0"
     },
-    "hash": "1dca145a0a4ad16853f7e7fbe092b6efa1f8ecb8ae9e35d2bb88cd74f7965298"
+    "hash": "e1dcb45e68b2a8ab07839614ec92709d797bcbdfaa81a9d28f3583c6d721758d"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -171,6 +171,8 @@
     "@fontsource/oswald": "$@fontsource/oswald",
     "@emotion/react": "$@emotion/react",
     "@emotion/styled": "$@emotion/styled",
-    "@mui/material": "$@mui/material"
+    "@mui/material": "$@mui/material",
+    "oidc-client-ts": "$oidc-client-ts",
+    "react-oidc-context": "$react-oidc-context"
   }
 }
