@@ -21,9 +21,9 @@ export default function MainLayout() {
   const location = useLocation();
   const auth = useAuth();
 
-   const cognitoDomain = "https://<tu-dominio-cognito>.auth.<region>.amazoncognito.com";
-   const clientId = "<tu-app-client-id>";
-   const logoutUri = "http://localhost:5173/";
+   const cognitoDomain = "https://eu-central-1e1deargct.auth.eu-central-1.amazoncognito.com";
+   const clientId = "4rsgg7f0jof8062a9rh1u4mgcl";
+   const logoutUri = "http://localhost:8080/";
 
    function handleLogout() {
        auth.removeUser?.().then(() => {
@@ -31,7 +31,6 @@ export default function MainLayout() {
          });
    }
 
-  if (auth.isLoading) {
       return <div>Cargando autenticación...</div>;
     }
 
