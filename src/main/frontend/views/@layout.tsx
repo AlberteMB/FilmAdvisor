@@ -1,6 +1,6 @@
 import { createMenuItems, useViewConfig } from '@vaadin/hilla-file-router/runtime.js';
 import { effect, signal } from '@vaadin/hilla-react-signals';
-import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem } from '@vaadin/react-components';
+import { AppLayout, DrawerToggle, Icon, SideNav, SideNavItem, Button } from '@vaadin/react-components';
 import { Suspense, useEffect } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import  MovieFilter  from '../components/MovieFilter';
@@ -20,6 +20,16 @@ export default function MainLayout() {
   const navigate = useNavigate();
   const location = useLocation();
   const auth = useAuth();
+
+   const cognitoDomain = "https://<tu-dominio-cognito>.auth.<region>.amazoncognito.com";
+   const clientId = "<tu-app-client-id>";
+   const logoutUri = "http://localhost:5173/";
+
+   function handleLogout() {
+       auth.removeUser?.().then(() => {
+           window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
+         });
+   }
 
   if (auth.isLoading) {
       return <div>Cargando autenticación...</div>;
@@ -53,6 +63,9 @@ export default function MainLayout() {
               <SideNavItem path={to} key={to}>
                 {icon ? <Icon src={icon} slot="prefix"></Icon> : <></>}
                 {title}
+                {auth.isAuthenticated && (
+                          <Button onClick={handleLogout}>Cerrar sesión</Button>
+                        )}
               </SideNavItem>
             ))}
           </SideNav>
