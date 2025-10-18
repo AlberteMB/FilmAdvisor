@@ -1,9 +1,18 @@
 export interface Movie {
-  id: number;
+  id: string;
+  platform: string;
+  movieId: String;
   title: string;
-  year: number;
   director: string;
-  genre: string[];
-  rating: number;
-  streamingPlatforms: string[];
+  year: number;
+  duration: number;
+  releasedDate: Date;
+  genre: string;
+  actors: string[];
+  synopsis: string;
+  ageRating: string;
+  imdbId: string;
+  imdbRating: number;
+  imageUrl: string;
+  platforms: string[];
 }

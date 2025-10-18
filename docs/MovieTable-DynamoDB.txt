@@ -1,0 +1,22 @@
+Tables:
+
+- Movie Table:
+PK = title#genre
+SK = platform#ReleasedDate
+
+GSI1 (YearIndex):
+PK = year
+SK = title
+
+
+- UserMovieStatus
+PK = user
+SK = title#date
+
+
+
+
+
+
+
+
