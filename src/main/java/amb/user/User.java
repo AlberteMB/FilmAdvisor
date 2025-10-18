@@ -1,64 +1,77 @@
 package amb.user;
 
-import amb.userMovieStatus.UserMovieStatus;
 import jakarta.persistence.*;
-
-import java.util.ArrayList;
-import java.util.List;
-
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.UuidGenerator;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
+@Table(name = "users")
 public class User {
+    
     @Id
     @GeneratedValue(generator = "UUID")
-    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
+    @UuidGenerator
+    @Column(name = "id", updatable = false, nullable = false)
     private String id;
 
-//    @Column(nullable = false, unique = true)
-//    @NotBlank(message = "Username is required")
+    @NotBlank(message = "Username is required")
+    @Size(min = 3, max = 50, message = "Username must be between 3 and 50 characters")
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
 
-//    @NotBlank(message = "Email is required")
-//    @Column(nullable = false, unique = true)
+    @NotBlank(message = "Email is required")
+    @Email(message = "Email should be valid")
+    @Column(name = "email", nullable = false, unique = true)
     private String email;
 
-//    @Column(nullable = false)
-//    @Size(min = 8, max = 16, message = "Password must be between 8 and 16 characters")
-//    @Pattern(
-//            regexp = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$",
-//            message = "Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character")
+    @NotBlank(message = "Password is required")
+    @Size(min = 8, message = "Password must be at least 8 characters")
+    @Column(name = "password", nullable = false)
     private String password;
 
-//    @Enumerated(EnumType.STRING)
-    private Role role;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "role", nullable = false)
+    private Role role = Role.USER;
+
+    @Column(name = "created_at", nullable = false, updatable = false)
+    private java.time.LocalDateTime createdAt;
+
+    @Column(name = "updated_at")
+    private java.time.LocalDateTime updatedAt;
 
     public enum Role {
         USER,
         ADMIN
     }
 
-    //@OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    //private UserPreferences preferences;
+    // Constructor para crear nuevo usuario
+    public User(String username, String email, String password, Role role) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.role = role;
+        this.createdAt = java.time.LocalDateTime.now();
+        this.updatedAt = java.time.LocalDateTime.now();
+    }
 
-//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-//    private List<UserMovieStatus> watchedMovies = new ArrayList<>();;
-//
-//    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-//    private Watchlist watchlist;
-//
-//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-//    private List<DiscardedMovie> discardedMovies = new ArrayList<>();;
+    @PrePersist
+    protected void onCreate() {
+        createdAt = java.time.LocalDateTime.now();
+        updatedAt = java.time.LocalDateTime.now();
+    }
 
+    @PreUpdate
+    protected void onUpdate() {
+        updatedAt = java.time.LocalDateTime.now();
+    }
 
     @Override
     public String toString() {
